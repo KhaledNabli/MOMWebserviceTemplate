@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TreeNodes>
+	<TreeNode>
+		<Name />
+		<TreeNode>
+			<Name>KenTreatment1</Name>
+			<NamedStringList>
+				<NamedValue>
+					<Name>TreatmentName</Name>
+					<Value>KenTreatment1</Value>
+				</NamedValue>
+				<NamedValue>
+					<Name>TreatmentCode</Name>
+					<Value>TRT1</Value>
+				</NamedValue>
+				<NamedValue>
+					<Name>TreatmentDescription</Name>
+					<Value />
+				</NamedValue>
+				<NamedValue>
+					<Name>TreatmentFolder</Name>
+					<Value />
+				</NamedValue>
+				<NamedValue>
+					<Name>TreatmentURL</Name>
+				</NamedValue>
+				<NamedValue>
+					<Name>TreatmentURLDescription</Name>
+				</NamedValue>
+			</NamedStringList>
+		</TreeNode>
+	</TreeNode>
+	<TreeNode>
+		<Name>ken</Name>
+		<TreeNode>
+			<Name>treatments</Name>
+			<TreeNode>
+				<Name>KenTreatment2</Name>
+				<NamedStringList>
+					<NamedValue>
+						<Name>TreatmentName</Name>
+						<Value>KenTreatment2</Value>
+					</NamedValue>
+					<NamedValue>
+						<Name>TreatmentCode</Name>
+						<Value>TRT3</Value>
+					</NamedValue>
+					<NamedValue>
+						<Name>TreatmentDescription</Name>
+						<Value />
+					</NamedValue>
+					<NamedValue>
+						<Name>TreatmentFolder</Name>
+						<Value>ken\treatments</Value>
+					</NamedValue>
+					<NamedValue>
+						<Name>TreatmentURL</Name>
+					</NamedValue>
+					<NamedValue>
+						<Name>TreatmentURLDescription</Name>
+					</NamedValue>
+				</NamedStringList>
+			</TreeNode>
+			<TreeNode>
+				<Name>KenTreatment3</Name>
+				<NamedStringList>
+					<NamedValue>
+						<Name>TreatmentName</Name>
+						<Value>KenTreatment3</Value>
+					</NamedValue>
+					<NamedValue>
+						<Name>TreatmentCode</Name>
+						<Value>TRT5</Value>
+					</NamedValue>
+					<NamedValue>
+						<Name>TreatmentDescription</Name>
+						<Value />
+					</NamedValue>
+					<NamedValue>
+						<Name>TreatmentFolder</Name>
+						<Value>ken\treatments</Value>
+					</NamedValue>
+					<NamedValue>
+						<Name>TreatmentURL</Name>
+					</NamedValue>
+					<NamedValue>
+						<Name>TreatmentURLDescription</Name>
+					</NamedValue>
+				</NamedStringList>
+			</TreeNode>
+		</TreeNode>
+	</TreeNode>
+</TreeNodes>

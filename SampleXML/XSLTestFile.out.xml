@@ -1,0 +1,153 @@
+<ERRORCOLLECTION>
+	<ERRORDATETIME>
+		<DAY>4</DAY>
+		<MONTH>8</MONTH>
+		<YEAR>2014</YEAR>
+		<HOUR>14</HOUR>
+		<MINUTE>52</MINUTE>
+		<SECOND>42</SECOND>
+	</ERRORDATETIME>
+	<ERROR>
+		<ERRORCODE>ALWEBSERVICEINTERFACE_INVOKESOAP_WS_FAILED</ERRORCODE>
+		<FUNCTIONNAME>Assetlink.ALWebServiceInterface.ALWebServiceInterfaceClass.InvokeSOAP_WS
+		</FUNCTIONNAME>
+		<ERRORTYPE>EXCEPTION</ERRORTYPE>
+		<INNERERROR>
+			<ERRORCOLLECTION>
+				<ERRORDATETIME>
+					<DAY>4</DAY>
+					<MONTH>8</MONTH>
+					<YEAR>2014</YEAR>
+					<HOUR>14</HOUR>
+					<MINUTE>52</MINUTE>
+					<SECOND>42</SECOND>
+				</ERRORDATETIME>
+				<ERROR>
+					<ERRORCODE>ALWEBSERVICEINTERFACE_ALSOAPCLASS_INVOKESOAP_WS_INVOKEWEBSERVICE_FAILED
+					</ERRORCODE>
+					<FUNCTIONNAME>Assetlink.ALWebServiceInterface.ALSOAPClass.InvokeSOAP_WS
+					</FUNCTIONNAME>
+					<ERRORTYPE>EXCEPTION</ERRORTYPE>
+					<INNERERROR>
+						<ERRORCOLLECTION>
+							<ERRORDATETIME>
+								<DAY>4</DAY>
+								<MONTH>8</MONTH>
+								<YEAR>2014</YEAR>
+								<HOUR>14</HOUR>
+								<MINUTE>52</MINUTE>
+								<SECOND>42</SECOND>
+							</ERRORDATETIME>
+							<ERROR>
+								<ERRORCODE>SOAP-ENV:Server</ERRORCODE>
+								<FUNCTIONNAME>Assetlink.ALWebServiceInterface.ALSOAPClass.InvokeWebService
+								</FUNCTIONNAME>
+								<ERRORTYPE>EXCEPTION</ERRORTYPE>
+								<EXCEPTION>
+									<MESSAGE>SERVER ERROR</MESSAGE>
+									<SOURCE>System</SOURCE>
+									<STACKTRACE>at System.Net.HttpWebRequest.GetResponse() at
+										Assetlink.ALWebServiceInterface.ALSOAPClass.InvokeWebService(String
+										Path, String SOAPAction, String proxy, Int32 TimeOut, String
+										UserName, String Password, Boolean EncodeCredentials, String
+										WSSConfigurationXml, String str_NameSpace, String SOAPXML,
+										String WSDL, String&amp; ResponseXML)</STACKTRACE>
+									<SOAPEXCEPTION>
+										<ACTOR>Actor</ACTOR>
+										<DETAILS>
+											<marketingException>
+												<ExceptionMessage>Treatment E-Mail Version A cannot be
+													found. </ExceptionMessage>
+											</marketingException>
+										</DETAILS>
+									</SOAPEXCEPTION>
+								</EXCEPTION>
+							</ERROR>
+						</ERRORCOLLECTION>
+					</INNERERROR>
+				</ERROR>
+			</ERRORCOLLECTION>
+		</INNERERROR>
+	</ERROR>
+	<ERROR>
+		<ERRORCODE>ALWEBSERVICEINTERFACE_INVOKEWEBSERVICE_FAILED</ERRORCODE>
+		<FUNCTIONNAME>Assetlink.ALWebServiceInterface.ALWebServiceInterfaceClass.InvokeWebService
+		</FUNCTIONNAME>
+		<ERRORTYPE>EXCEPTION</ERRORTYPE>
+		<INNERERROR>
+			<ERRORCOLLECTION>
+				<ERRORDATETIME>
+					<DAY>4</DAY>
+					<MONTH>8</MONTH>
+					<YEAR>2014</YEAR>
+					<HOUR>14</HOUR>
+					<MINUTE>52</MINUTE>
+					<SECOND>42</SECOND>
+				</ERRORDATETIME>
+				<ERROR>
+					<ERRORCODE>ALWEBSERVICEINTERFACE_INVOKESOAP_WS_FAILED</ERRORCODE>
+					<FUNCTIONNAME>Assetlink.ALWebServiceInterface.ALWebServiceInterfaceClass.InvokeSOAP_WS
+					</FUNCTIONNAME>
+					<ERRORTYPE>EXCEPTION</ERRORTYPE>
+					<INNERERROR>
+						<ERRORCOLLECTION>
+							<ERRORDATETIME>
+								<DAY>4</DAY>
+								<MONTH>8</MONTH>
+								<YEAR>2014</YEAR>
+								<HOUR>14</HOUR>
+								<MINUTE>52</MINUTE>
+								<SECOND>42</SECOND>
+							</ERRORDATETIME>
+							<ERROR>
+								<ERRORCODE>ALWEBSERVICEINTERFACE_ALSOAPCLASS_INVOKESOAP_WS_INVOKEWEBSERVICE_FAILED
+								</ERRORCODE>
+								<FUNCTIONNAME>Assetlink.ALWebServiceInterface.ALSOAPClass.InvokeSOAP_WS
+								</FUNCTIONNAME>
+								<ERRORTYPE>EXCEPTION</ERRORTYPE>
+								<INNERERROR>
+									<ERRORCOLLECTION>
+										<ERRORDATETIME>
+											<DAY>4</DAY>
+											<MONTH>8</MONTH>
+											<YEAR>2014</YEAR>
+											<HOUR>14</HOUR>
+											<MINUTE>52</MINUTE>
+											<SECOND>42</SECOND>
+										</ERRORDATETIME>
+										<ERROR>
+											<ERRORCODE>SOAP-ENV:Server</ERRORCODE>
+											<FUNCTIONNAME>Assetlink.ALWebServiceInterface.ALSOAPClass.InvokeWebService
+											</FUNCTIONNAME>
+											<ERRORTYPE>EXCEPTION</ERRORTYPE>
+											<EXCEPTION>
+												<MESSAGE>SERVER ERROR</MESSAGE>
+												<SOURCE>System</SOURCE>
+												<STACKTRACE>at System.Net.HttpWebRequest.GetResponse() at
+													Assetlink.ALWebServiceInterface.ALSOAPClass.InvokeWebService(String
+													Path, String SOAPAction, String proxy, Int32 TimeOut,
+													String UserName, String Password, Boolean
+													EncodeCredentials, String WSSConfigurationXml, String
+													str_NameSpace, String SOAPXML, String WSDL, String&amp;
+													ResponseXML)</STACKTRACE>
+												<SOAPEXCEPTION>
+													<ACTOR>Actor</ACTOR>
+													<DETAILS>
+														<marketingException>
+															<ExceptionMessage>Treatment E-Mail Version A cannot be
+																found. </ExceptionMessage>
+														</marketingException>
+													</DETAILS>
+												</SOAPEXCEPTION>
+											</EXCEPTION>
+										</ERROR>
+									</ERRORCOLLECTION>
+								</INNERERROR>
+							</ERROR>
+						</ERRORCOLLECTION>
+					</INNERERROR>
+				</ERROR>
+			</ERRORCOLLECTION>
+		</INNERERROR>
+	</ERROR>
+</ERRORCOLLECTION>

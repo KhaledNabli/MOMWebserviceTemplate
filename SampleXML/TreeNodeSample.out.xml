@@ -1,0 +1,18 @@
+<TreeNodes>
+	<TreeNode NodeData=""
+		Text="Integration_MA_SelectionData_Label_Treatments" Selectionmode="None">
+		<TreeNode NodeData="" Text="" Selectionmode="None">
+			<TreeNode NodeData="" Text="KenTreatment1" Selectionmode="MultiSelect"
+				Tooltip="" />
+		</TreeNode>
+		<TreeNode NodeData="" Text="ken" Selectionmode="None">
+			<TreeNode NodeData="" Text="treatments" Selectionmode="None">
+				<TreeNode NodeData="" Text="KenTreatment2" Selectionmode="MultiSelect"
+					Tooltip="" />
+				<TreeNode NodeData="" Text="KenTreatment3" Selectionmode="MultiSelect"
+					Tooltip="" />
+			</TreeNode>
+		</TreeNode>
+	</TreeNode>
+</TreeNodes>
+

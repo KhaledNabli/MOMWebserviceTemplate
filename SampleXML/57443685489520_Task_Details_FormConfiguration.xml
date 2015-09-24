@@ -1,0 +1,1777 @@
+<Form Name="57443685489520_Task_Details" DisplayText="Create Campaign and Initate Counts_Task_Details"
+	DisplayFormHeading="True" DisplayFormBorder="False" FormImageAlignment="Disable"
+	DisplayAdditionalFieldList="False" ButtonsPresent="False"
+	TARGETOBJECTTYPE="ENTITY" TARGETOBJECTNAME="WORKFLOWPROCESS"
+	TARGETOBJECTPRIMARYKEY="WORKFLOWPROCESSID" DisplayTextID="RPT_Task_Shared">
+	<Section Heading="TaskDetails" Order="1" ColumnLayout="1"
+		SectionVisibleMode="Both" DisplaySectionHeadingOnDetailPage="False"
+		DisplaySectionHeadingOnEditPage="False" DisplaySectionBorder="False"
+		SectionImageAlignment="Disable" cssHeadingTitle="MainTitleText"
+		cssHeadingBackground="MainTitleBar" cssBorderColor="SquareBlankSectionBorderColor"
+		cssSectionContentBK="SectionBK" DisplayTextID="TaskDetails_SHARED">
+		<Column Order="1">
+			<Field Name="WORKFLOWPROCESS_PROCESSNAME" Order="2"
+				FIELDCONTENTTYPE="DataField" Label="Task Title" DISPLAYNAME="Task Title"
+				UIType="EditBox" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" LabelVisible="True" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				IsMandatory="Yes" DataType="STRING" FIELDTYPE="STRING" OBJECTTYPE="ENTITY"
+				FIELDNAME="PROCESSNAME" FIELDSIZE="255" ISPRIMARYKEY="FALSE"
+				ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="EDITBOX" OBJECTTYPENAME="WORKFLOWPROCESS"
+				RELATIONSHIPTYPE="" RELATIONSHIPNAME="" ControlHeight=""
+				ControlWidth="100" IsBuiltIn="True" DisplayTextID="MWB_TaskTitle_Shared">
+				<Validators>
+					<Validator MaxLength="255" Type="Length" />
+				</Validators>
+			</Field>
+			<Field Name="WORKFLOWPROCESS_DESCRIPTION" Order="3"
+				FIELDCONTENTTYPE="DataField" Label="Instructions" DISPLAYNAME="Instructions"
+				UIType="TextArea" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" LabelVisible="True" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				IsMandatory="No" DataType="STRING" FIELDTYPE="STRING" OBJECTTYPE="ENTITY"
+				FIELDNAME="DESCRIPTION" FIELDSIZE="1024" ISPRIMARYKEY="FALSE"
+				ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="EDITBOX" OBJECTTYPENAME="WORKFLOWPROCESS"
+				RELATIONSHIPTYPE="" RELATIONSHIPNAME="" ControlHeight="5"
+				ControlWidth="102" DisplayTextID="MWB_Instruction_Shared">
+				<Validators>
+					<Validator MaxLength="1024" Type="Length" />
+				</Validators>
+			</Field>
+			<Field Name="WORKFLOWPROCESS_WORKFLOWPROCESSUNIQUEID" Order="1"
+				FIELDCONTENTTYPE="DataField" Label="Task ID" DisplayTextID="MWB_TaskID"
+				DISPLAYNAME="Task ID" UIType="EDITBOX" LabelCssClass="LabelText"
+				LabelAlign="right" LabelValign="top" LabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" IsMandatory="No" DataType="STRING" FIELDTYPE="STRING"
+				OBJECTTYPE="ENTITY" FIELDNAME="WORKFLOWPROCESSUNIQUEID" FIELDSIZE="255"
+				ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="EDITBOX"
+				OBJECTTYPENAME="WORKFLOWPROCESS" RELATIONSHIPTYPE=""
+				RELATIONSHIPNAME="" HTMLDecoding="FALSE" DisplayType="READONLY"
+				Disable="Yes" ControlHeight="" ControlWidth="60" AutoGenerate="Yes"
+				ObjectSeriesID="279737919576025" IsBuiltIn="True">
+				<Validators>
+					<Validator MaxLength="255" Type="Length" />
+				</Validators>
+			</Field>
+		</Column>
+	</Section>
+	<Section Heading="TaskDetails_Ex" Order="2" ColumnLayout="2"
+		SectionVisibleMode="Both" DisplaySectionHeadingOnDetailPage="False"
+		DisplaySectionHeadingOnEditPage="False" DisplaySectionBorder="False"
+		SectionImageAlignment="Disable" cssHeadingTitle="MainTitleText"
+		cssHeadingBackground="MainTitleBar" cssBorderColor="SquareBlankSectionBorderColor"
+		cssSectionContentBK="SectionBK" DisplayTextID="TaskDetails_Ex_SHARED">
+		<Column Order="1">
+			<Field Name="WORKFLOWPROCESS_STATUS" Order="2"
+				FIELDCONTENTTYPE="DataField" Label="Status" DISPLAYNAME="Status"
+				UIType="EDITBOX" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" LabelVisible="True" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				IsMandatory="FALSE" DataType="STRING" FIELDTYPE="STRING" OBJECTTYPE="ENTITY"
+				FIELDNAME="STATUS" FIELDSIZE="50" ISPRIMARYKEY="FALSE"
+				ISNAMEDHIERARCHY="TRUE" NAMEDHIERARCHYID="167276362305616"
+				NamedHierarchyName="WorkflowProcess Status" FIELDUITYPE="EDITBOX"
+				OBJECTTYPENAME="WORKFLOWPROCESS" RELATIONSHIPTYPE=""
+				RELATIONSHIPNAME="" Disable="Yes" DisplayType="ReadOnly" IsBuiltIn="True"
+				DisplayTextID="MWB_Status_Shared" />
+			<Field Name="WORKFLOWPROCESS_REVIEWSTATUS" Order="3"
+				FIELDCONTENTTYPE="DataField" Label="Review Status" DISPLAYNAME="Review Status"
+				UIType="EDITBOX" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" LabelVisible="False" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				IsMandatory="FALSE" DataType="STRING" FIELDTYPE="STRING" OBJECTTYPE="ENTITY"
+				FIELDNAME="REVIEWSTATUS" FIELDSIZE="50" ISPRIMARYKEY="FALSE"
+				ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="EDITBOX" OBJECTTYPENAME="WORKFLOWPROCESS"
+				RELATIONSHIPTYPE="" RELATIONSHIPNAME="" Disable="Yes" DisplayType="ReadOnly"
+				IsBuiltIn="True" DisplayTextID="ReviewStatus_Shared" />
+			<Field Name="WORKFLOWPROCESS_STARTDATE" Order="1"
+				FIELDCONTENTTYPE="DataField" Label="Start Date" DISPLAYNAME="Start Date"
+				UIType="CALENDAR" FormattingRequired="Yes" LabelCssClass="LabelText"
+				LabelAlign="right" LabelValign="top" LabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" IsMandatory="FALSE" DataType="DATETIME" FIELDTYPE="DATETIME"
+				OBJECTTYPE="ENTITY" FIELDNAME="STARTDATE" FIELDSIZE="8"
+				ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="CALENDAR"
+				OBJECTTYPENAME="WORKFLOWPROCESS" RELATIONSHIPTYPE=""
+				RELATIONSHIPNAME="" Disable="Yes" DisplayType="ReadOnly" IsBuiltIn="True"
+				DisplayTextID="MWB_StartDate_Shared" />
+			<Field Name="WORKFLOWPROCESS_ACTUALENDDATE" Order="4"
+				FIELDCONTENTTYPE="DataField" Label="Actual End Date" DISPLAYNAME="Actual End Date"
+				UIType="CALENDAR" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" LabelVisible="True" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				IsMandatory="FALSE" DataType="DATETIME" FIELDTYPE="DATETIME"
+				OBJECTTYPE="ENTITY" FIELDNAME="ACTUALENDDATE" FIELDSIZE="8"
+				ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="CALENDAR"
+				OBJECTTYPENAME="WORKFLOWPROCESS" RELATIONSHIPTYPE=""
+				RELATIONSHIPNAME="" IsBuiltIn="True" Mode="DATETIME"
+				DisplayTextID="WORKFLOWPROCESS_ACTUALENDDATE_SHARED" />
+			<Field Order="5" Name="ActivityDuration" Label="Duration"
+				UIType="EDITBOX" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" LabelVisible="True" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				DisplayType="Edit" Disable="No" ControlHeight="" ControlWidth="3"
+				AutoGenerate="No" IsMandatory="Yes" DataType="INTEGER" FieldVisible="False"
+				DisplayTextID="MWB_Duration_Shared">
+				<Instruction DisplayTextID="ActivityDuration_INSTRUCTIONS_SHARED">Days</Instruction>
+			</Field>
+		</Column>
+		<Column Order="2">
+			<Field Name="WORKFLOWPROCESSINFO_PERCENTDONE_PROCESS_INFORMATION"
+				Order="2" FIELDCONTENTTYPE="DataField" Label="% Complete"
+				DISPLAYNAME="% Complete" UIType="PERCENTDONE" LabelCssClass="LabelText"
+				LabelAlign="right" LabelValign="top" LabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" IsMandatory="FALSE" DataType="INTEGER" FIELDTYPE="INTEGER"
+				OBJECTTYPE="FACET" FIELDNAME="PERCENTDONE" FIELDSIZE="8"
+				ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="EDITBOX"
+				OBJECTTYPENAME="WORKFLOWPROCESSINFO" RELATIONSHIPTYPE="Composition"
+				RELATIONSHIPNAME="PROCESS_INFORMATION" Disable="Yes" DisplayType="ReadOnly"
+				IsBuiltIn="True" DisplayTextID="MWB_PercentDone_Shared" />
+			<Field Name="WORKFLOWPROCESS_DUEDATE" Order="1"
+				FIELDCONTENTTYPE="DataField" Label="Due Date" DISPLAYNAME="Due Date"
+				UIType="CALENDAR" FormattingRequired="Yes" LabelCssClass="LabelText"
+				LabelAlign="right" LabelValign="top" LabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" IsMandatory="FALSE" DataType="DATETIME" FIELDTYPE="DATETIME"
+				OBJECTTYPE="ENTITY" FIELDNAME="DUEDATE" FIELDSIZE="8" ISPRIMARYKEY="FALSE"
+				ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="CALENDAR" OBJECTTYPENAME="WORKFLOWPROCESS"
+				RELATIONSHIPTYPE="" RELATIONSHIPNAME="" Disable="Yes" DisplayType="ReadOnly"
+				IsBuiltIn="True" DisplayTextID="MWB_DueDate_Shared" />
+			<Field
+				Name="WORKFLOWINFORMATION_SELECTEDCOMPONENTS_WORKFLOWPROCESS_WORKFLOWINFORMATION"
+				Order="3" FIELDCONTENTTYPE="DataField" Label="Selected component list id for task"
+				DISPLAYNAME="Selected component list id for task" UIType="XMLBROWSER"
+				LabelCssClass="LabelText" LabelAlign="right" LabelValign="top"
+				LabelVisible="True" ReadOnlyCssClass="Text" EditableCssClass="FormInputArea"
+				Align="left" Valign="top" IsMandatory="No" DataType="XML" FIELDTYPE="XML"
+				OBJECTTYPE="FACET" FIELDNAME="SELECTEDCOMPONENTS" FIELDSIZE="0"
+				ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="XMLBROWSER"
+				OBJECTTYPENAME="WORKFLOWINFORMATION" RELATIONSHIPTYPE="COMPOSITION"
+				RELATIONSHIPNAME="WORKFLOWPROCESS_WORKFLOWINFORMATION" FieldVisible="False"
+				DisplayTextID="MWB_TaskDetails_Selectedcomponentlistidfortask" />
+			<Field
+				Name="WORKFLOWINFORMATION_WORKFLOWINFORMATIONID_WORKFLOWPROCESS_WORKFLOWINFORMATION"
+				Order="4" FIELDCONTENTTYPE="DataField" Label="Workflow Information ID"
+				DISPLAYNAME="Workflow Information ID" UIType="EDITBOX"
+				LabelCssClass="LabelText" LabelAlign="right" LabelValign="top"
+				LabelVisible="True" ReadOnlyCssClass="Text" EditableCssClass="FormInputArea"
+				Align="left" Valign="top" IsMandatory="No" DataType="INTEGER"
+				FIELDTYPE="INTEGER" OBJECTTYPE="FACET" FIELDNAME="WORKFLOWINFORMATIONID"
+				FIELDSIZE="8" ISPRIMARYKEY="TRUE" ISNAMEDHIERARCHY="FALSE"
+				FIELDUITYPE="EDITBOX" OBJECTTYPENAME="WORKFLOWINFORMATION"
+				RELATIONSHIPTYPE="COMPOSITION" RELATIONSHIPNAME="WORKFLOWPROCESS_WORKFLOWINFORMATION"
+				FieldVisible="False" DisplayTextID="MWB_TaskDetails_WorkflowInformationID" />
+		</Column>
+	</Section>
+	<Section Heading="TaskDetails_Ex1" Order="3" ColumnLayout="1"
+		SectionVisibleMode="Both" DisplaySectionHeadingOnDetailPage="False"
+		DisplaySectionHeadingOnEditPage="False" DisplaySectionBorder="False"
+		SectionImageAlignment="Disable" cssHeadingTitle="MainTitleText"
+		cssHeadingBackground="MainTitleBar" cssBorderColor="SquareBlankSectionBorderColor"
+		cssSectionContentBK="SectionBK" DisplayTextID="TaskDetails_Ex1_SHARED">
+		<Column Order="1">
+			<Field
+				Name="WORKFLOWINFORMATION_NOTIFYIFJOBDELAYED_WORKFLOWPROCESS_WORKFLOWINFORMATION"
+				Order="1" FIELDCONTENTTYPE="DataField" Label="Notify if task is delayed"
+				DISPLAYNAME="Notify if task is delayed" UIType="CHECKBOX"
+				LabelCssClass="Text" LabelAlign="right" LabelValign="top"
+				LabelVisible="False" ReadOnlyCssClass="Text" EditableCssClass="FormInputArea"
+				Align="left" Valign="top" IsMandatory="No" DataType="BOOLEAN"
+				FIELDTYPE="BOOLEAN" OBJECTTYPE="FACET" FIELDNAME="NOTIFYIFJOBDELAYED"
+				FIELDSIZE="1" ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE"
+				FIELDUITYPE="CHECKBOX" OBJECTTYPENAME="WORKFLOWINFORMATION"
+				RELATIONSHIPTYPE="COMPOSITION" RELATIONSHIPNAME="WORKFLOWPROCESS_WORKFLOWINFORMATION"
+				DisplayType="Edit" Disable="No" ControlHeight="" ControlWidth=""
+				AutoGenerate="No" ColumnCount="" DefaultNamedHierarchyValue=""
+				UseNamedHierarchy="No" SelectAll="No" DisplayTextID="MWB_NotifyIfTaskIsDelayed">
+				<Item DisplayTextID="MWB_NotifyIfTaskIsDelayed">
+					<DisplayValue>Notify if task is delayed</DisplayValue>
+					<Value>1</Value>
+				</Item>
+				<ValueList>
+					<Value>0</Value>
+				</ValueList>
+			</Field>
+			<Field
+				Name="WORKFLOWPROCESSINFO_NOTIFYCONTRIBUTORSONRESPONSE_PROCESS_INFORMATION"
+				Order="3" FIELDCONTENTTYPE="DataField"
+				Label="Notify contributors when response is posted" DISPLAYNAME="Notify contributors when response is posted"
+				UIType="CHECKBOX" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" LabelVisible="False" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				IsMandatory="No" DataType="BOOLEAN" FIELDTYPE="BOOLEAN" OBJECTTYPE="FACET"
+				FIELDNAME="NOTIFYCONTRIBUTORSONRESPONSE" FIELDSIZE="1" ISPRIMARYKEY="FALSE"
+				ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="DROPDOWNLIST" OBJECTTYPENAME="WORKFLOWPROCESSINFO"
+				RELATIONSHIPTYPE="Composition" RELATIONSHIPNAME="PROCESS_INFORMATION"
+				DisplayType="Edit" Disable="No" ControlHeight="" ControlWidth=""
+				AutoGenerate="No" ColumnCount="" DefaultNamedHierarchyValue=""
+				UseNamedHierarchy="No" SelectAll="No" FieldVisible="False"
+				DisplayTextID="MWB_NotifyContributorOnResponse">
+				<Item DisplayTextID="MWB_NotifyContributorOnResponse">
+					<DisplayValue>Notify contributors when response is posted
+					</DisplayValue>
+					<Value>1</Value>
+				</Item>
+				<ValueList>
+					<Value>0</Value>
+				</ValueList>
+			</Field>
+			<Field Name="WORKFLOWPROCESSINFO_NOTIFYONRESPONSE_PROCESS_INFORMATION"
+				Order="2" FIELDCONTENTTYPE="DataField"
+				Label="Notify task initiator when response is posted." DISPLAYNAME="Notify task initiator when response is posted."
+				UIType="CHECKBOX" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" LabelVisible="False" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				IsMandatory="No" DataType="BOOLEAN" FIELDTYPE="BOOLEAN" OBJECTTYPE="FACET"
+				FIELDNAME="NOTIFYONRESPONSE" FIELDSIZE="1" ISPRIMARYKEY="FALSE"
+				ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="DROPDOWNLIST" OBJECTTYPENAME="WORKFLOWPROCESSINFO"
+				RELATIONSHIPTYPE="Composition" RELATIONSHIPNAME="PROCESS_INFORMATION"
+				DisplayType="Edit" Disable="No" ControlHeight="" ControlWidth=""
+				AutoGenerate="No" ColumnCount="" DefaultNamedHierarchyValue=""
+				UseNamedHierarchy="No" SelectAll="No" FieldVisible="False"
+				DisplayTextID="MWB_NotifyTaskInitiatorOnResponse">
+				<Item DisplayTextID="MWB_NotifyTaskInitiatorOnResponse">
+					<DisplayValue>Notify task initiator when response is posted
+					</DisplayValue>
+					<Value>1</Value>
+				</Item>
+				<ValueList>
+					<Value>0</Value>
+				</ValueList>
+			</Field>
+			<Field Order="4" Name="ResponseBreadCrumbs" Label="" UIType="CHECKBOX"
+				LabelCssClass="LabelText" LabelAlign="right" LabelValign="top"
+				ROLabelVisible="True" EditModeLabelVisible="True" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				FieldVisible="true" Mode="DATE" DisplayType="Edit" Disable="No"
+				ControlHeight="" ControlWidth="60" AutoGenerate="No" IsMandatory="No"
+				ColumnCount="" DefaultNamedHierarchyValue="" UseNamedHierarchy="No"
+				SelectAll="No" DataType="BOOLEAN" IsConditionalDisplay="Yes">
+				<Item Selected="Yes" DisplayTextID="MWB_ResponseBreadCrumbs_Shared">
+					<DisplayValue>No</DisplayValue>
+					<Value>1</Value>
+				</Item>
+				<ValueList>
+					<Value>1</Value>
+				</ValueList>
+				<CONDITIONALDISPLAY DEFAULTDISPLAYMODE="HIDDEN">
+					<CONDITION ORDER="1" DISPLAYMODE="EDIT">
+						<FIELD
+							FIELDNAME="WORKFLOWINFORMATION_WORKFLOWSUBCATEGORY_WORKFLOWPROCESS_WORKFLOWINFORMATION"
+							OPERATOR="EQUALTO">
+							<VALUELIST CONJUNCTION="OR">
+								<VALUE>Discussion</VALUE>
+								<VALUE>Tracking</VALUE>
+							</VALUELIST>
+						</FIELD>
+					</CONDITION>
+				</CONDITIONALDISPLAY>
+			</Field>
+			<Field
+				Name="WORKFLOWINFORMATION_WORKFLOWSUBCATEGORY_WORKFLOWPROCESS_WORKFLOWINFORMATION"
+				Order="5" FIELDCONTENTTYPE="DataField" Label="Workflow Sub-Category"
+				DISPLAYNAME="Workflow Sub-Category" UIType="DROPDOWNLIST"
+				LabelCssClass="LabelText" LabelAlign="right" LabelValign="top"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" IsMandatory="No" DataType="STRING" FIELDTYPE="STRING"
+				OBJECTTYPE="FACET" FIELDNAME="WORKFLOWSUBCATEGORY" FIELDSIZE="50"
+				ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="TRUE" NAMEDHIERARCHYID="164376466097061"
+				UseNamedHierarchy="Yes" FIELDUITYPE="DROPDOWNLIST" OBJECTTYPENAME="WORKFLOWINFORMATION"
+				RELATIONSHIPTYPE="COMPOSITION" RELATIONSHIPNAME="WORKFLOWPROCESS_WORKFLOWINFORMATION"
+				ROLabelVisible="True" EditModeLabelVisible="True" FieldVisible="false"
+				Mode="DATE" DisplayType="Edit" Disable="No" ControlHeight=""
+				ControlWidth="" AutoGenerate="No" EventHandling="False" ColumnCount=""
+				NamedHierarchyName="WORKFLOWSUBCATEGORY" DefaultNamedHierarchyValue=""
+				SelectAll="No" ShowDefaultMessage="false" IsConditionAwareField="true"
+				DisplayTextID="MWB_TaskDetails_WorkFlowSubCategory">
+				<Help />
+				<NotExpectedValueList>
+					<Value />
+				</NotExpectedValueList>
+			</Field>
+		</Column>
+	</Section>
+	<RELATEDENTITIES />
+	<RELATEDFACETS>
+		<FACET TYPENAME="WORKFLOWPROCESSINFO" TYPEDESCRIPTION="Facet for WorkflowProcess."
+			OBJECTTYPE="FACET" PRIMARYKEY="WORKFLOWPROCESSINFOID"
+			RELATIONSHIPTYPEID="109574871933848" RELATIONSHIPNAME="PROCESS_INFORMATION"
+			RELATIONSHIPTYPE="Composition" RELATEDOBJECTTYPE="ENTITY"
+			RELATEDOBJECTNAME="WORKFLOWPROCESS" IsSeries="" />
+		<FACET TYPENAME="WORKFLOWINFORMATION" TYPEDESCRIPTION=""
+			OBJECTTYPE="FACET" PRIMARYKEY="WORKFLOWINFORMATIONID"
+			RELATIONSHIPTYPEID="154951847894" RELATIONSHIPNAME="WORKFLOWPROCESS_WORKFLOWINFORMATION"
+			RELATIONSHIPTYPE="COMPOSITION" RELATEDOBJECTTYPE="ENTITY"
+			RELATEDOBJECTNAME="WORKFLOWPROCESS" IsSeries="" />
+		<FACET TYPENAME="SAS_COMM1"
+			TYPEDESCRIPTION="fixed fields for communication 1 (name, code, min budget, etc.)"
+			OBJECTTYPE="FACET" PRIMARYKEY="COMM1_PK" RELATIONSHIPNAME="WORKFLOW_SAS_COMM1"
+			RELATEDOBJECTTYPE="ENTITY" RELATEDOBJECTNAME="WORKFLOWPROCESS"
+			RELATIONSHIPTYPE="COMPOSITION" />
+		<FACET TYPENAME="SAS_COMM1_CUSTDET" TYPEDESCRIPTION="custom detail fields for communication"
+			OBJECTTYPE="FACET" PRIMARYKEY="CUSTOM_DETAIL_PK1" RELATIONSHIPNAME="WORKFLOW_SAS_COMM1_CUSTDET"
+			RELATEDOBJECTTYPE="ENTITY" RELATEDOBJECTNAME="WORKFLOWPROCESS"
+			RELATIONSHIPTYPE="COMPOSITION" />
+		<FACET TYPENAME="SAS_COMM1_TRGT_TRMTS"
+			TYPEDESCRIPTION="fields for selecting multiple targets for a communication, and multiple treatments per target, and mkt cell name and code"
+			OBJECTTYPE="FACET" PRIMARYKEY="TARGET_TREATMENT_PK1"
+			RELATIONSHIPNAME="WORKFLOW_SAS_COMM1_TRGT_TRMTS" RELATEDOBJECTTYPE="ENTITY"
+			RELATEDOBJECTNAME="WORKFLOWPROCESS" RELATIONSHIPTYPE="COMPOSITION"
+			IsSeries="YES" SORTCOLUMN="MKT_CELL_NAME_C1" SORTCOLUMNDATATYPE="STRING"
+			SORTORDER="ASC" />
+		<FACET TYPENAME="SAS_CUSTOM_DETAILS_STD"
+			TYPEDESCRIPTION="all the custom details needed for the initiate and review campaign tasks"
+			OBJECTTYPE="FACET" PRIMARYKEY="CUSTOM_DETAILS_PK" RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+			RELATEDOBJECTTYPE="ENTITY" RELATEDOBJECTNAME="WORKFLOWPROCESS"
+			RELATIONSHIPTYPE="COMPOSITION" />
+		<FACET TYPENAME="SAS_CAMPAIGN_1"
+			TYPEDESCRIPTION="Initiate Campaign Facet with fixed brief fields and Campaign Schedule, and permission groups"
+			OBJECTTYPE="FACET" PRIMARYKEY="AL_CAMPAIGN_PK" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+			RELATEDOBJECTTYPE="ENTITY" RELATEDOBJECTNAME="WORKFLOWPROCESS"
+			RELATIONSHIPTYPE="COMPOSITION" />
+	</RELATEDFACETS>
+	<Section Heading="Communication" Order="8" ColumnLayout="2"
+		SectionVisibleMode="Both" DisplaySectionHeadingOnDetailPage="True"
+		DisplaySectionBorder="True" DisplaySectionHeadingOnEditPage="True"
+		IsConditionalDisplay="No" SectionImageAlignment="Disable"
+		cssHeadingTitle="" cssHeadingBackground="" cssBorderColor=""
+		cssSectionContentBK="" DisplayTextID="Communication_SHARED">
+		<Column Order="1">
+			<Field Name="SAS_COMM1_COMM_CODE_C1_WORKFLOW_SAS_COMM1"
+				FIELDNAME="COMM_CODE_C1" DISPLAYNAME="Communication Code" DataType="STRING"
+				LabelAlign="right" LabelValign="top" LabelVisible="True" Align="left"
+				UIType="EDITBOX" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_COMM1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOW_SAS_COMM1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Communication Code"
+				Order="3" ISNAMEDHIERARCHY="FALSE" DisplayTextID="SAS_COMM1_COMM_CODE_C1_SHARED" />
+			<Field
+				Name="SAS_COMM1_CUSTDET_COMM_DESCRIPTION_C1_WORKFLOW_SAS_COMM1_CUSTDET"
+				FIELDNAME="COMM_DESCRIPTION_C1" DISPLAYNAME="Communication Description"
+				DataType="STRING" LabelAlign="right" LabelValign="top" Align="left"
+				UIType="TEXTAREA" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_COMM1_CUSTDET"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOW_SAS_COMM1_CUSTDET"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No"
+				Label="Communication Description" Order="5" ISNAMEDHIERARCHY="FALSE"
+				HTMLDecoding="FALSE" LabelCssClass="" ROLabelVisible="True"
+				EditModeLabelVisible="True" ReadOnlyCssClass="" EditableCssClass=""
+				Valign="top" FieldVisible="true" Mode="DATE" DisplayType="Edit"
+				Disable="No" ControlHeight="3" ControlWidth="32" AutoGenerate="No"
+				DisplayTextID="SAS_COMM1_CUSTDET_COMM_DESCRIPTION_C1_SHARED" />
+			<Field Name="SAS_COMM1_COMM_NAME_C1_WORKFLOW_SAS_COMM1"
+				FIELDNAME="COMM_NAME_C1" DISPLAYNAME="Communication Name" DataType="STRING"
+				LabelAlign="right" LabelValign="top" LabelVisible="True" Align="left"
+				UIType="EDITBOX" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_COMM1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOW_SAS_COMM1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Communication Name"
+				Order="2" ISNAMEDHIERARCHY="FALSE" DisplayTextID="SAS_COMM1_COMM_NAME_C1_SHARED" />
+			<Field Name="SAS_COMM1_UNIT_COST_C1_WORKFLOW_SAS_COMM1"
+				FIELDNAME="UNIT_COST_C1" DISPLAYNAME="Unit Cost" DataType="FLOAT"
+				LabelAlign="right" LabelValign="top" LabelVisible="True" Align="left"
+				UIType="EDITBOX" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_COMM1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOW_SAS_COMM1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Unit Cost"
+				FormattingRequired="YES" Order="4" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_COMM1_UNIT_COST_C1_SHARED" />
+			<Field Name="SAS_COMM1_COMM_DEFINITION_C1_WORKFLOW_SAS_COMM1"
+				Order="1" FIELDCONTENTTYPE="DataField" Label="Communication Definition"
+				DISPLAYNAME="Communication Definition" UIType="DROPDOWNLIST"
+				LabelCssClass="LabelText" LabelAlign="right" LabelValign="top"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" IsMandatory="No" DataType="STRING" FIELDTYPE="STRING"
+				OBJECTTYPE="FACET" FIELDNAME="COMM_DEFINITION_C1" FIELDSIZE="255"
+				ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="TRUE" NAMEDHIERARCHYID="105161388315135"
+				UseNamedHierarchy="Yes" SHOWSELECTEDVALUEPATH="TRUE" FIELDUITYPE="DROPDOWNLIST"
+				OBJECTTYPENAME="SAS_COMM1" RELATIONSHIPTYPE="COMPOSITION"
+				RELATIONSHIPNAME="WORKFLOW_SAS_COMM1" ROLabelVisible="True"
+				EditModeLabelVisible="True" FieldVisible="true" Mode="DATE"
+				DisplayType="Edit" Disable="No" ControlHeight="" ControlWidth=""
+				AutoGenerate="No" EventHandling="False" ColumnCount=""
+				NamedHierarchyName="sasci_QS_CommunicationDefinition"
+				DefaultNamedHierarchyValue="" SelectAll="No" ShowDefaultMessage="false"
+				DisplayTextID="SAS_COMM1_COMM_DEFINITION_C1_SHARED">
+				<Help />
+				<NotExpectedValueList>
+					<Value>
+					</Value>
+				</NotExpectedValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+		</Column>
+		<Column Order="2">
+			<Field Name="SAS_COMM1_MIN_BUDGET_C1_WORKFLOW_SAS_COMM1"
+				FIELDNAME="MIN_BUDGET_C1" DISPLAYNAME="Minimum Budget" DataType="FLOAT"
+				LabelAlign="right" LabelValign="top" LabelVisible="True" Align="left"
+				UIType="EDITBOX" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_COMM1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOW_SAS_COMM1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Minimum Budget"
+				FormattingRequired="YES" Order="1" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_COMM1_MIN_BUDGET_C1_SHARED" />
+			<Field Name="SAS_COMM1_MIN_OFFERS_C1_WORKFLOW_SAS_COMM1"
+				FIELDNAME="MIN_OFFERS_C1" DISPLAYNAME="Minimum Offers" DataType="INTEGER"
+				LabelAlign="right" LabelValign="top" LabelVisible="True" Align="left"
+				UIType="EDITBOX" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_COMM1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOW_SAS_COMM1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Minimum Offers"
+				FormattingRequired="YES" Order="3" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_COMM1_MIN_OFFERS_C1_SHARED" />
+			<Field Name="SAS_COMM1_MAX_BUDGET_C1_WORKFLOW_SAS_COMM1"
+				FIELDNAME="MAX_BUDGET_C1" DISPLAYNAME="Maximum Budget" DataType="FLOAT"
+				LabelAlign="right" LabelValign="top" Align="left" UIType="EDITBOX"
+				FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_COMM1" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_COMM1" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Maximum Budget" FormattingRequired="Yes"
+				Order="2" ISNAMEDHIERARCHY="FALSE" LabelCssClass="" ROLabelVisible="True"
+				EditModeLabelVisible="True" ReadOnlyCssClass="" EditableCssClass=""
+				Valign="top" FieldVisible="true" Mode="DATE" DisplayType="Edit"
+				Disable="No" ControlHeight="" ControlWidth="30" AutoGenerate="No"
+				DigitsAfterDecimal="2" DisplayTextID="SAS_COMM1_MAX_BUDGET_C1_SHARED">
+				<Validators>
+					<Validator MinValue="1" MaxValue="10000000" Type="Range" />
+				</Validators>
+			</Field>
+			<Field Name="SAS_COMM1_MAX_OFFERS_C1_WORKFLOW_SAS_COMM1"
+				FIELDNAME="MAX_OFFERS_C1" DISPLAYNAME="Maximum Offers" DataType="INTEGER"
+				LabelAlign="right" LabelValign="top" LabelVisible="True" Align="left"
+				UIType="EDITBOX" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_COMM1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOW_SAS_COMM1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Maximum Offers"
+				FormattingRequired="YES" Order="4" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_COMM1_MAX_OFFERS_C1_SHARED" />
+		</Column>
+	</Section>
+	<Section
+		Heading="this heading does not show (for comm1 subsection) SAS_COMM1_CUSTDET"
+		Order="9" ColumnLayout="2" SectionVisibleMode="Both"
+		DisplaySectionHeadingOnDetailPage="False" DisplaySectionBorder="False"
+		DisplaySectionHeadingOnEditPage="False" IsConditionalDisplay="No"
+		SectionImageAlignment="Disable" cssHeadingTitle=""
+		cssHeadingBackground="" cssBorderColor="" cssSectionContentBK=""
+		DisplayTextID="this_heading_does_not_show_(for_comm1_subsection)_SAS_COMM1_CUSTDET_SHARED">
+		<Column Order="1">
+			<Field
+				Name="SAS_COMM1_CUSTDET_EXPECTED_REVENUE_C1_WORKFLOW_SAS_COMM1_CUSTDET"
+				FIELDNAME="EXPECTED_REVENUE_C1" DISPLAYNAME="Expected Revenue"
+				DataType="FLOAT" LabelAlign="right" LabelValign="top" LabelVisible="True"
+				Align="left" UIType="EDITBOX" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_COMM1_CUSTDET" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_COMM1_CUSTDET" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Expected Revenue" FormattingRequired="YES"
+				Order="6" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_COMM1_CUSTDET_EXPECTED_REVENUE_C1_SHARED" />
+			<Field
+				Name="SAS_COMM1_CUSTDET_EXPECTED_RESPONSE_C1_WORKFLOW_SAS_COMM1_CUSTDET"
+				FIELDNAME="EXPECTED_RESPONSE_C1" DISPLAYNAME="Expected Response"
+				DataType="FLOAT" LabelAlign="right" LabelValign="top" LabelVisible="True"
+				Align="left" UIType="EDITBOX" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_COMM1_CUSTDET" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_COMM1_CUSTDET" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Expected Response" FormattingRequired="YES"
+				Order="7" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_COMM1_CUSTDET_EXPECTED_RESPONSE_C1_SHARED" />
+			<Field
+				Name="SAS_COMM1_CUSTDET_PLANNED_END_DATE_C1_WORKFLOW_SAS_COMM1_CUSTDET"
+				FIELDNAME="PLANNED_END_DATE_C1" DISPLAYNAME="Planned End Date"
+				DataType="DATETIME" LabelAlign="right" LabelValign="top"
+				LabelVisible="True" Align="left" UIType="CALENDAR" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_COMM1_CUSTDET" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_COMM1_CUSTDET" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Planned End Date" FormattingRequired="YES"
+				Order="4" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_COMM1_CUSTDET_PLANNED_END_DATE_C1_SHARED" />
+			<Field
+				Name="SAS_COMM1_CUSTDET_PLANNED_START_DATE_C1_WORKFLOW_SAS_COMM1_CUSTDET"
+				FIELDNAME="PLANNED_START_DATE_C1" DISPLAYNAME="Planned Start Date"
+				DataType="DATETIME" LabelAlign="right" LabelValign="top"
+				LabelVisible="True" Align="left" UIType="CALENDAR" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_COMM1_CUSTDET" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_COMM1_CUSTDET" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Planned Start Date" FormattingRequired="YES"
+				Order="3" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_COMM1_CUSTDET_PLANNED_START_DATE_C1_SHARED" />
+			<Field
+				Name="SAS_COMM1_CUSTDET_EXPECTED_COST_C1_WORKFLOW_SAS_COMM1_CUSTDET"
+				FIELDNAME="EXPECTED_COST_C1" DISPLAYNAME="Expected Cost" DataType="FLOAT"
+				LabelAlign="right" LabelValign="top" LabelVisible="True" Align="left"
+				UIType="EDITBOX" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_COMM1_CUSTDET"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOW_SAS_COMM1_CUSTDET"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Expected Cost"
+				FormattingRequired="YES" Order="5" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_COMM1_CUSTDET_EXPECTED_COST_C1_SHARED" />
+			<Field Name="SAS_COMM1_CUSTDET_STRATEGY_C1_WORKFLOW_SAS_COMM1_CUSTDET"
+				FIELDNAME="STRATEGY_C1" DISPLAYNAME="Strategy" DataType="STRING"
+				LabelAlign="right" LabelValign="top" LabelVisible="True" Align="left"
+				UIType="DROPDOWNLIST" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_COMM1_CUSTDET"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOW_SAS_COMM1_CUSTDET"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Strategy"
+				Order="8" ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes"
+				SHOWSELECTEDVALUEPATH="true" NAMEDHIERARCHYID="156440393600298"
+				DisplayTextID="SAS_COMM1_CUSTDET_STRATEGY_C1_SHARED" />
+			<Field Order="1" Name="blankco1_11" Label="blankco1_11" UIType="EDITBOX"
+				LabelCssClass="LabelText" LabelAlign="right" LabelValign="top"
+				ROLabelVisible="True" EditModeLabelVisible="True" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				FieldVisible="false" Mode="DATE" DisplayType="READONLY" Disable="Yes"
+				ControlHeight="" ControlWidth="30" AutoGenerate="No" IsMandatory="No"
+				DataType="NONE" DisplayTextID="blankco1_11_SHARED" />
+			<Field Order="2" Name="Communication_Custom_Details1" Label="Communication Custom Details"
+				UIType="EDITBOX" LabelCssClass="Text" LabelAlign="left" LabelValign="top"
+				ROLabelVisible="True" EditModeLabelVisible="True" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				FieldVisible="true" Mode="DATE" DisplayType="READONLY" Disable="Yes"
+				ControlHeight="" ControlWidth="30" AutoGenerate="No" IsMandatory="No"
+				DataType="NONE" DisplayTextID="Communication_Custom_Details1_SHARED" />
+		</Column>
+		<Column Order="2">
+			<Field Order="2" Name="blankco1_22" Label="blankco1_22" UIType="EDITBOX"
+				LabelCssClass="LabelText" LabelAlign="right" LabelValign="top"
+				ROLabelVisible="True" EditModeLabelVisible="True" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				FieldVisible="false" Mode="DATE" DisplayType="READONLY" Disable="Yes"
+				ControlHeight="" ControlWidth="30" AutoGenerate="No" IsMandatory="No"
+				DataType="NONE" DisplayTextID="blankco1_22_SHARED" />
+			<Field Order="1" Name="blankco1_12" Label="blankco1_12" UIType="EDITBOX"
+				LabelCssClass="LabelText" LabelAlign="right" LabelValign="top"
+				ROLabelVisible="True" EditModeLabelVisible="True" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				FieldVisible="false" Mode="DATE" DisplayType="Edit" Disable="No"
+				ControlHeight="" ControlWidth="30" AutoGenerate="No" IsMandatory="No"
+				DataType="NONE" DisplayTextID="blankco1_12_SHARED" />
+			<Field Name="SAS_COMM1_CUSTDET_HYPERLINK_C1_WORKFLOW_SAS_COMM1_CUSTDET"
+				Order="3" FIELDCONTENTTYPE="DataField" Label="Hyperlink"
+				DISPLAYNAME="Hyperlink" UIType="EDITBOX" LabelCssClass="LabelText"
+				LabelAlign="right" LabelValign="top" LabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" IsMandatory="No" DataType="STRING" FIELDTYPE="STRING"
+				OBJECTTYPE="FACET" FIELDNAME="HYPERLINK_C1" FIELDSIZE="255"
+				ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="EDITBOX"
+				OBJECTTYPENAME="SAS_COMM1_CUSTDET" RELATIONSHIPTYPE="COMPOSITION"
+				RELATIONSHIPNAME="WORKFLOW_SAS_COMM1_CUSTDET" DisplayTextID="SAS_COMM1_CUSTDET_HYPERLINK_C1_SHARED">
+				<Validators>
+					<Validator MaxLength="255" Type="Length" />
+				</Validators>
+			</Field>
+			<Field
+				Name="SAS_COMM1_CUSTDET_HYPERLINK_NAME_C1_WORKFLOW_SAS_COMM1_CUSTDET"
+				Order="4" FIELDCONTENTTYPE="DataField" Label="Hyperink Display Name"
+				DISPLAYNAME="Hyperink Display Name" UIType="EDITBOX" LabelCssClass="LabelText"
+				LabelAlign="right" LabelValign="top" LabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" IsMandatory="No" DataType="STRING" FIELDTYPE="STRING"
+				OBJECTTYPE="FACET" FIELDNAME="HYPERLINK_NAME_C1" FIELDSIZE="255"
+				ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="EDITBOX"
+				OBJECTTYPENAME="SAS_COMM1_CUSTDET" RELATIONSHIPTYPE="COMPOSITION"
+				RELATIONSHIPNAME="WORKFLOW_SAS_COMM1_CUSTDET" DisplayTextID="SAS_COMM1_CUSTDET_HYPERLINK_NAME_C1_SHARED">
+				<Validators>
+					<Validator MaxLength="255" Type="Length" />
+				</Validators>
+			</Field>
+		</Column>
+	</Section>
+	<Section
+		Heading="this heading does not show (for comm1 subsection) SAS_COMM1_TRGT_TRMTS"
+		Order="10" ColumnLayout="1" SectionVisibleMode="Both"
+		DisplaySectionHeadingOnDetailPage="False" DisplaySectionBorder="False"
+		DisplaySectionHeadingOnEditPage="False" SectionImageAlignment="Disable"
+		cssHeadingTitle="" cssHeadingBackground="" cssBorderColor=""
+		cssSectionContentBK="" IsConditionalDisplay="No"
+		DisplayTextID="this_heading_does_not_show_(for_comm1_subsection)_SAS_COMM1_TRGT_TRMTS_SHARED">
+		<Column Order="1">
+			<Field Order="1" Name="blankco1tt_11" Label="blankco1tt_11"
+				UIType="EDITBOX" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" FieldVisible="false" Mode="DATE" DisplayType="READONLY"
+				Disable="Yes" ControlHeight="" ControlWidth="30" AutoGenerate="No"
+				IsMandatory="No" DataType="NONE" DisplayTextID="blankco1tt_11_SHARED" />
+			<Field Order="2" Name="MarketingCell_Target_Treatments"
+				Label="Target List, Marketing Cell, and Treatments" UIType="EDITBOX"
+				LabelCssClass="LabelText" LabelAlign="left" LabelValign="top"
+				ROLabelVisible="True" EditModeLabelVisible="True" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				FieldVisible="true" Mode="DATE" DisplayType="READONLY" Disable="Yes"
+				ControlHeight="" ControlWidth="60" AutoGenerate="No" IsMandatory="No"
+				DataType="NONE" DisplayTextID="MarketingCell_Target_Treatments_SHARED" />
+			<Field Name="SAS_COMM1_TRGT_TRMTSSERIES" Order="3"
+				FIELDCONTENTTYPE="DATAFIELD"
+				Label="Grid to select Target List, Marketing Cell, and Treatments"
+				FIELDNAME="TARGET_TREATMENT_PK1" OBJECTTYPE="FACET" OBJECTTYPENAME="SAS_COMM1_TRGT_TRMTS"
+				RELATIONSHIPTYPE="COMPOSITION" RELATIONSHIPNAME="WORKFLOW_SAS_COMM1_TRGT_TRMTS"
+				UIType="ListControl" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" LabelVisible="False" Align="left" Valign="top"
+				IsMandatory="No" DataType="STRING" SectionWidth="800"
+				IteratorAlignment="Right" ROScrollHeight="300" ROScrollWidth="840"
+				EditableScrollHeight="300" EditableScrollWidth="940"
+				InBuiltActionMode="READONLY" PopupWidth="700" PopupHeight="200"
+				AddPopupTitle="" EnableExcelTemplateLink="true"
+				UseAllColumnsForImportExport="true">
+				<Configuration Name="SAS_COMM1_TRGT_TRMTSSeries"
+					DisplayText="SAS_COMM1_TRGT_TRMTS">
+					<DisplayLayout>
+						<List Name="SAS_COMM1_TRGT_TRMTS Series"
+							ErrorMessage="select &quot;edit&quot; below to add Marketing Cell entries, select one Target List per Marketing Cell, and assign Treatments to each Marketing Cell"
+							PageSize="50" GridLines="Yes" EnableDoubleClickDragDrop="False"
+							EnableColumnDragDrop="False" TARGETOBJECTTYPE="FACET"
+							TARGETOBJECTNAME="SAS_COMM1_TRGT_TRMTS" TARGETOBJECTPRIMARYKEY="TARGET_TREATMENT_PK1"
+							FormName="57443685489520_Task_Details" DisplayTextID="ERR_AP_ARTWORK_APENGINE_FORMAT_CREATEFORMAT_FAILED"
+							ErrorMessageID="ERR_Integration_MA_TRGT_TRMTS_Series_Error_Shared">
+							<Header SelectionType="CheckBox" SelectAll="Yes"
+								DisplayHeader="Yes" SelectionName="CB_SERIES"
+								SelectionColumnName="TARGET_TREATMENT_PK1" />
+							<DisplayColumns>
+								<TargetObject ObjectName="SAS_COMM1_TRGT_TRMTS"
+									NavigationPath="SAS_COMM1_TRGT_TRMTS">
+									<Column Order="1" Name="TARGET_TREATMENT_PK1" Width=""
+										Align="left" Valign="middle" SortDataType="Number"
+										DisplayState="No" ApplySort="false" RowAlign="left" RowValign="top"
+										UIType="Text" DisplayValue="TARGET_TREATMENT_PK1" OBJECTTYPE="FACET"
+										ObjectName="SAS_COMM1_TRGT_TRMTS" RELATIONSHIPNAME="WORKFLOW_SAS_COMM1_TRGT_TRMTS"
+										OBJECTTYPENAME="SAS_COMM1_TRGT_TRMTS" FIELDNAME="TARGET_TREATMENT_PK1" />
+									<Column Order="2" Name="MKT_CELL_NAME_C1" Width="180px"
+										FIELDNAME="MKT_CELL_NAME_C1" DisplayState="YES"
+										DisplayValue="Marketing Cell Name" DisplayTextID="SAS_COMM1_TRGT_TRMTS_MKT_CELL_NAME_C1_SHARED"
+										Align="left" Valign="middle" RowAlign="left" SortDataType="Text"
+										ApplySort="true" IsReadOnly="false" IsMandatory="False"
+										DataType="STRING" DoAutoGenerate="False" SeriesID="30710293607684"
+										UIType="EDITBOX" ControlWidth="25" RowValign="top">
+									</Column>
+									<Column Order="3" Name="MKT_CELL_CODE_C1" Width="180px"
+										FIELDNAME="MKT_CELL_CODE_C1" DisplayState="YES"
+										DisplayValue="Marketing Cell Code" DisplayTextID="SAS_COMM1_TRGT_TRMTS_MKT_CELL_CODE_C1_SHARED"
+										Align="left" Valign="middle" RowAlign="left" SortDataType="Text"
+										ApplySort="true" IsReadOnly="false" IsMandatory="False"
+										DataType="STRING" DoAutoGenerate="False" SeriesID="30710293607684"
+										UIType="EDITBOX" ControlWidth="25" RowValign="top">
+									</Column>
+									<Column Order="4" Name="TARGET_CELL_C1" Width="220px"
+										FIELDNAME="TARGET_CELL_C1" DisplayState="YES" DisplayValue="Target List"
+										DisplayTextID="SAS_COMM1_TRGT_TRMTS_TARGET_CELL_C1_SHARED"
+										Align="left" Valign="middle" RowAlign="left" SortDataType="Text"
+										ApplySort="true" IsReadOnly="false" IsMandatory="False"
+										DataType="STRING" DoAutoGenerate="False" SeriesID=""
+										SHOWSELECTEDVALUEPATH="True" SELECTIONMODE="SingleSelect"
+										WEBSERVICECONFIGID="172903736382445" UIType="TREEVIEW"
+										RowValign="middle" NAMEDHIERARCHYID="263587988086110">
+									</Column>
+									<Column Order="5" Name="TREATMENT_C1" Width="220px"
+										FIELDNAME="TREATMENT_C1" DisplayState="YES" DisplayValue="Treatments"
+										DisplayTextID="SAS_COMM1_TRGT_TRMTS_TREATMENT_C1_SHARED"
+										Align="left" Valign="middle" RowAlign="left" SortDataType="Text"
+										ApplySort="true" IsReadOnly="false" IsMandatory="False"
+										DataType="STRING" DoAutoGenerate="False" SeriesID=""
+										SHOWSELECTEDVALUEPATH="True" WEBSERVICECONFIGID="188671629297753"
+										UIType="TREEVIEW" RowValign="middle" NAMEDHIERARCHYID="125895324171338">
+									</Column>
+								</TargetObject>
+								<RelatedEntities>
+								</RelatedEntities>
+							</DisplayColumns>
+						</List>
+					</DisplayLayout>
+					<ActionControlList ActionBarType="SectionButtonBar">
+						<ActionControl Alignment="left" Tooltip="Delete"
+							UIType="ALSmallButton" Name="DeleteSeriesRecord" Order="0"
+							CausesValidation="False" EventArgument="" Visible="TRUE"
+							IsDefault="true" ShowInEditMode="TRUE" ShowInROMode="FALSE"
+							ShowInFormROMode="FALSE" DisplayTextID="Delete_Shared" TooltipID="Delete_Shared">
+							<DisplayText>Delete</DisplayText>
+						</ActionControl>
+						<ActionControl Alignment="left" UIType="Separator"
+							Name="BUTTON_SEPARATOR" Order="1" CausesValidation="False"
+							Visible="TRUE" ShowInEditMode="TRUE" ShowInROMode="FALSE"
+							ShowInFormROMode="FALSE">
+							<DisplayText>Separator</DisplayText>
+						</ActionControl>
+						<ActionControl Alignment="left" Tooltip="ALButton"
+							UIType="Listbox" Name="NumberOfSeriesRows" Order="2"
+							CausesValidation="False" Visible="TRUE" IsDefault="true"
+							ShowInEditMode="TRUE" ShowInROMode="FALSE" ShowInFormROMode="FALSE">
+							<Item Text="1" Value="1" Selected="True" />
+							<Item Text="2" Value="2" Selected="False" />
+							<Item Text="3" Value="3" Selected="False" />
+							<Item Text="4" Value="4" Selected="False" />
+							<Item Text="5" Value="5" Selected="False" />
+							<Item Text="10" Value="10" Selected="False" />
+							<Item Text="20" Value="20" Selected="False" />
+						</ActionControl>
+						<ActionControl Alignment="left" Tooltip="Add"
+							UIType="ALSmallButton" Name="AddSeriesRecord" Order="3"
+							CausesValidation="False" Visible="TRUE" IsDefault="true"
+							ShowInEditMode="TRUE" ShowInROMode="FALSE" ShowInFormROMode="FALSE"
+							DisplayTextID="Add_Shared" TooltipID="Add_Shared">
+							<DisplayText>Add</DisplayText>
+						</ActionControl>
+						<ActionControl Alignment="left" UIType="Separator"
+							Name="BUTTON_SEPARATOR" Order="4" CausesValidation="False"
+							Visible="TRUE" ShowInEditMode="TRUE" ShowInROMode="FALSE"
+							ShowInFormROMode="FALSE">
+							<DisplayText>Separator</DisplayText>
+						</ActionControl>
+						<ActionControl Alignment="left" Tooltip="Copy"
+							UIType="ALSmallButton" Name="CopySeriesRecord" Order="5"
+							CausesValidation="False" EventArgument="" Visible="TRUE"
+							IsDefault="true" ShowInEditMode="TRUE" ShowInROMode="FALSE"
+							ShowInFormROMode="FALSE" DisplayTextID="Copy_Shared" TooltipID="Copy_Shared">
+							<DisplayText>Copy</DisplayText>
+						</ActionControl>
+						<ActionControl Alignment="left" UIType="Separator"
+							Name="BUTTON_SEPARATOR" Order="6" CausesValidation="False"
+							Visible="TRUE" ShowInEditMode="TRUE" ShowInROMode="FALSE"
+							ShowInFormROMode="FALSE">
+							<DisplayText>Separator</DisplayText>
+						</ActionControl>
+						<ActionControl Alignment="left" Tooltip="Import"
+							UIType="ALSmallButton" Name="ImportSeriesRecord" Order="7"
+							CausesValidation="False" Visible="FALSE" IsDefault="true"
+							ShowInEditMode="TRUE" ShowInROMode="FALSE" ShowInFormROMode="FALSE"
+							DisplayTextID="Import_Shared" TooltipID="Import_Shared">
+							<DisplayText>Import</DisplayText>
+						</ActionControl>
+						<ActionControl Alignment="left" Tooltip="Export"
+							UIType="ALSmallButton" Name="ExportSeriesRecord" Order="8"
+							CausesValidation="False" Visible="TRUE" IsDefault="true"
+							ShowInEditMode="TRUE" ShowInROMode="TRUE" ShowInFormROMode="TRUE"
+							DisplayTextID="Export_Shared" TooltipID="Export_Shared">
+							<DisplayText>Export</DisplayText>
+						</ActionControl>
+						<ActionControl Alignment="left" UIType="Separator"
+							Name="BUTTON_SEPARATOR" Order="9" CausesValidation="False"
+							Visible="TRUE" ShowInEditMode="FALSE" ShowInROMode="TRUE"
+							ShowInFormROMode="FALSE">
+							<DisplayText>Separator</DisplayText>
+						</ActionControl>
+						<ActionControl Alignment="left" Tooltip="Edit"
+							UIType="ALSmallButton" Name="EditSeriesRecord" Order="10"
+							CausesValidation="False" EventArgument="" Visible="TRUE"
+							IsDefault="true" ShowInEditMode="FALSE" ShowInROMode="TRUE"
+							ShowInFormROMode="FALSE" DisplayTextID="Edit_Shared" TooltipID="Edit_Shared">
+							<DisplayText>Edit</DisplayText>
+						</ActionControl>
+					</ActionControlList>
+				</Configuration>
+			</Field>
+		</Column>
+	</Section>
+	<Section
+		Heading="this heading does not show (for campaign subsection) SAS_CUSTOM_DETAILS_STD"
+		Order="5" ColumnLayout="2" SectionVisibleMode="Both"
+		DisplaySectionHeadingOnDetailPage="False" DisplaySectionBorder="False"
+		DisplaySectionHeadingOnEditPage="False" SectionImageAlignment="Disable"
+		cssHeadingTitle="" cssHeadingBackground="" cssBorderColor=""
+		cssSectionContentBK=""
+		DisplayTextID="this_heading_does_not_show_(for_campaign_subsection)_SAS_CUSTOM_DETAILS_STD_SHARED">
+		<Column Order="1">
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_CAMPAIGN_PURPOSE_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="CAMPAIGN_PURPOSE" DISPLAYNAME="Campaign Purpose"
+				DataType="STRING" LabelAlign="right" LabelValign="top" LabelVisible="True"
+				Align="left" UIType="TEXTAREA" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Campaign Purpose" Order="12"
+				ISNAMEDHIERARCHY="FALSE" DisplayTextID="SAS_CUSTOM_DETAILS_STD_CAMPAIGN_PURPOSE_SHARED" />
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_RESPONSE_START_DATE_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="RESPONSE_START_DATE" DISPLAYNAME="Response Start Date"
+				DataType="DATETIME" LabelAlign="right" LabelValign="top"
+				LabelVisible="True" Align="left" UIType="CALENDAR" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Response Start Date" FormattingRequired="YES"
+				Order="5" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_RESPONSE_START_DATE_SHARED" />
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_PLANNED_START_DATE_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="PLANNED_START_DATE" DISPLAYNAME="Planned Start Date"
+				DataType="DATETIME" LabelAlign="right" LabelValign="top"
+				LabelVisible="True" Align="left" UIType="CALENDAR" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Planned Start Date" FormattingRequired="YES"
+				Order="3" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_PLANNED_START_DATE_SHARED" />
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_EXPECTED_CAMPAIGN_COST_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="EXPECTED_CAMPAIGN_COST" DISPLAYNAME="Expected Campaign Cost"
+				DataType="FLOAT" LabelAlign="right" LabelValign="top" LabelVisible="True"
+				Align="left" UIType="EDITBOX" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Expected Campaign Cost" FormattingRequired="YES"
+				Order="8" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_EXPECTED_CAMPAIGN_COST_SHARED" />
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_EXPECTED_CAMPAIGN_R_O_I_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="EXPECTED_CAMPAIGN_R_O_I" DISPLAYNAME="Expected Campaign ROI"
+				DataType="FLOAT" LabelAlign="right" LabelValign="top" LabelVisible="True"
+				Align="left" UIType="EDITBOX" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Expected Campaign ROI" FormattingRequired="YES"
+				Order="10" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_EXPECTED_CAMPAIGN_R_O_I_SHARED" />
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_CHANNEL_REQUIRED_DATE_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="CHANNEL_REQUIRED_DATE" DISPLAYNAME="Channel Required Date"
+				DataType="DATETIME" LabelAlign="right" LabelValign="top"
+				LabelVisible="True" Align="left" UIType="CALENDAR" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Channel Required Date" FormattingRequired="YES"
+				Order="7" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_CHANNEL_REQUIRED_DATE_SHARED" />
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_EXPECTED_CAMPAIGN_REVENUE_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="EXPECTED_CAMPAIGN_REVENUE" DISPLAYNAME="Expected Campaign Revenue"
+				DataType="FLOAT" LabelAlign="right" LabelValign="top" LabelVisible="True"
+				Align="left" UIType="EDITBOX" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Expected Campaign Revenue"
+				FormattingRequired="YES" Order="9" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_EXPECTED_CAMPAIGN_REVENUE_SHARED" />
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_PLANNED_END_DATE_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="PLANNED_END_DATE" DISPLAYNAME="Planned End Date"
+				DataType="DATETIME" LabelAlign="right" LabelValign="top"
+				LabelVisible="True" Align="left" UIType="CALENDAR" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Planned End Date" FormattingRequired="YES"
+				Order="4" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_PLANNED_END_DATE_SHARED" />
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_RESPONSE_END_DATE_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="RESPONSE_END_DATE" DISPLAYNAME="Response End Date"
+				DataType="DATETIME" LabelAlign="right" LabelValign="top"
+				LabelVisible="True" Align="left" UIType="CALENDAR" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Response End Date" FormattingRequired="YES"
+				Order="6" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_RESPONSE_END_DATE_SHARED" />
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_CAMPAIGN_STRATEGY_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="CAMPAIGN_STRATEGY" DISPLAYNAME="Campaign Strategy"
+				DataType="STRING" LabelAlign="right" LabelValign="top" LabelVisible="True"
+				Align="left" UIType="DROPDOWNLIST" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Campaign Strategy" Order="11"
+				ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes" NAMEDHIERARCHYID="156440393600298"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_CAMPAIGN_STRATEGY_SHARED" />
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_TARGET_AUDIENCE_DESCRIPTION_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="TARGET_AUDIENCE_DESCRIPTION" DISPLAYNAME="Target Audience Description"
+				DataType="STRING" LabelAlign="right" LabelValign="top" LabelVisible="True"
+				Align="left" UIType="TEXTAREA" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Target Audience Description" Order="13"
+				ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_TARGET_AUDIENCE_DESCRIPTION_SHARED" />
+			<Field Order="1" Name="BlankFieldca1" Label="BlankField_ca1"
+				UIType="EDITBOX" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" FieldVisible="false" Mode="DATE" DisplayType="READONLY"
+				Disable="Yes" ControlHeight="" ControlWidth="30" AutoGenerate="No"
+				IsMandatory="No" DataType="NONE" DisplayTextID="BlankFieldca1_SHARED" />
+			<Field Order="2" Name="Campaign_Custom_Details" Label="Campaign Custom Details"
+				UIType="EDITBOX" LabelCssClass="Text" LabelAlign="left" LabelValign="top"
+				ROLabelVisible="True" EditModeLabelVisible="True" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				FieldVisible="true" Mode="DATE" DisplayType="READONLY" Disable="Yes"
+				ControlHeight="" ControlWidth="30" AutoGenerate="No" IsMandatory="No"
+				DataType="NONE" DisplayTextID="Campaign_Custom_Details_SHARED" />
+		</Column>
+		<Column Order="2">
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_CAMPAIGN_REVIEWER_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="CAMPAIGN_REVIEWER" DISPLAYNAME="Campaign Reviewer"
+				DataType="STRING" LabelAlign="right" LabelValign="top" LabelVisible="True"
+				Align="left" UIType="DROPDOWNLIST" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Campaign Reviewer" Order="5"
+				ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes" NAMEDHIERARCHYID="85541870567056"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_CAMPAIGN_REVIEWER_SHARED" />
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_SUPPORTING_DIVISION_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="SUPPORTING_DIVISION" DISPLAYNAME="Supporting Division"
+				DataType="STRING" LabelAlign="right" LabelValign="top" LabelVisible="True"
+				Align="left" UIType="DROPDOWNLIST" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Supporting Division" Order="6"
+				ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes" NAMEDHIERARCHYID="236952425555753"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_SUPPORTING_DIVISION_SHARED" />
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_MARKETING_MANAGER_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="MARKETING_MANAGER" DISPLAYNAME="Marketing Manager"
+				DataType="STRING" LabelAlign="right" LabelValign="top" LabelVisible="True"
+				Align="left" UIType="DROPDOWNLIST" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Marketing Manager" Order="3"
+				ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes" NAMEDHIERARCHYID="200084618610848"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_MARKETING_MANAGER_SHARED" />
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_CAMPAIGN_MANAGER_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="CAMPAIGN_MANAGER" DISPLAYNAME="Campaign Manager"
+				DataType="STRING" LabelAlign="right" LabelValign="top" LabelVisible="True"
+				Align="left" UIType="DROPDOWNLIST" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Campaign Manager" Order="4"
+				ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes" NAMEDHIERARCHYID="21551142947390"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_CAMPAIGN_MANAGER_SHARED" />
+			<Field Order="1" Name="BlankField_ca12" Label="BlankField_ca12"
+				UIType="EDITBOX" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" FieldVisible="false" Mode="DATE" DisplayType="READONLY"
+				Disable="Yes" ControlHeight="" ControlWidth="30" AutoGenerate="No"
+				IsMandatory="No" DataType="NONE" DisplayTextID="BlankField_ca12_SHARED" />
+			<Field Order="2" Name="BlankField_ca22" Label="BlankField_ca22"
+				UIType="EDITBOX" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" FieldVisible="false" Mode="DATE" DisplayType="READONLY"
+				Disable="Yes" ControlHeight="" ControlWidth="30" AutoGenerate="No"
+				IsMandatory="No" DataType="NONE" DisplayTextID="BlankField_ca22_SHARED" />
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_HYPERLINK_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				Order="8" FIELDCONTENTTYPE="DataField" Label="Hyperlink"
+				DISPLAYNAME="Hyperlink" UIType="EDITBOX" LabelCssClass="LabelText"
+				LabelAlign="right" LabelValign="top" LabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" IsMandatory="No" DataType="STRING" FIELDTYPE="STRING"
+				OBJECTTYPE="FACET" FIELDNAME="HYPERLINK" FIELDSIZE="255"
+				ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="EDITBOX"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" DisplayTextID="SAS_CUSTOM_DETAILS_STD_HYPERLINK_SHARED">
+				<Validators>
+					<Validator MaxLength="255" Type="Length" />
+				</Validators>
+			</Field>
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_HYPERLINK_DISPLAY_NAME_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				Order="9" FIELDCONTENTTYPE="DataField" Label="Hyperlink Display Name"
+				DISPLAYNAME="Hyperlink Display Name" UIType="EDITBOX" LabelCssClass="LabelText"
+				LabelAlign="right" LabelValign="top" LabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" IsMandatory="No" DataType="STRING" FIELDTYPE="STRING"
+				OBJECTTYPE="FACET" FIELDNAME="HYPERLINK_DISPLAY_NAME" FIELDSIZE="255"
+				ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="EDITBOX"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_HYPERLINK_DISPLAY_NAME_SHARED">
+				<Validators>
+					<Validator MaxLength="255" Type="Length" />
+				</Validators>
+			</Field>
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_LEGAL_REQUIREMENT_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				Order="7" FIELDCONTENTTYPE="DataField" Label="Legal Requirement"
+				DISPLAYNAME="Legal Requirement" UIType="RADIOBUTTON" LabelCssClass="LabelText"
+				LabelAlign="right" LabelValign="top" LabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" IsMandatory="No" DataType="STRING" FIELDTYPE="STRING"
+				OBJECTTYPE="FACET" FIELDNAME="LEGAL_REQUIREMENT" FIELDSIZE="1"
+				ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="TRUE" NAMEDHIERARCHYID="238623545377203"
+				UseNamedHierarchy="Yes" FIELDUITYPE="RADIOBUTTON" OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD"
+				RELATIONSHIPTYPE="COMPOSITION" RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_LEGAL_REQUIREMENT_SHARED" />
+		</Column>
+	</Section>
+	<Section Heading="Campaign" Order="4" ColumnLayout="2"
+		SectionVisibleMode="Both" DisplaySectionHeadingOnDetailPage="True"
+		DisplaySectionBorder="True" DisplaySectionHeadingOnEditPage="True"
+		SectionImageAlignment="Disable" cssHeadingTitle=""
+		cssHeadingBackground="" cssBorderColor="" cssSectionContentBK=""
+		DisplayTextID="Campaign_SHARED">
+		<Column Order="1">
+			<Field
+				Name="SAS_CAMPAIGN_1_BUSINESS_CONTEXT_NAME_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="BUSINESS_CONTEXT_NAME" DISPLAYNAME="Business Context Name (PS recomm. hiding)"
+				DataType="STRING" LabelAlign="right" LabelValign="top" Align="left"
+				UIType="DROPDOWNLIST" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No"
+				Label="Business Context Name (PS recomm. hiding)" Order="1"
+				ISNAMEDHIERARCHY="FALSE" LabelCssClass="" ROLabelVisible="True"
+				EditModeLabelVisible="True" ReadOnlyCssClass="" EditableCssClass=""
+				Valign="top" FieldVisible="true" Mode="DATE" DisplayType="Edit"
+				Disable="No" ControlHeight="" ControlWidth="30" AutoGenerate="No"
+				EventHandling="False" ColumnCount="" NAMEDHIERARCHYID="193182848818270"
+				NamedHierarchyName="sasci_QS_BusinessContext"
+				DefaultNamedHierarchyValue="G_BC_ORASmall" UseNamedHierarchy="Yes"
+				SelectAll="No" ShowDefaultMessage="false"
+				DisplayTextID="SAS_CAMPAIGN_1_BUSINESS_CONTEXT_NAME_SHARED">
+				<Value>G_BC_ORASmall</Value>
+				<NotExpectedValueList>
+					<Value>
+					</Value>
+				</NotExpectedValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field Name="SAS_CAMPAIGN_1_CAMPAIGN_CODE_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="CAMPAIGN_CODE" DISPLAYNAME="Campaign Code" DataType="STRING"
+				LabelAlign="right" LabelValign="top" LabelVisible="True" Align="left"
+				UIType="EDITBOX" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Campaign Code"
+				Order="4" ISNAMEDHIERARCHY="FALSE" DisplayTextID="SAS_CAMPAIGN_1_CAMPAIGN_CODE_SHARED" />
+			<Field Name="SAS_CAMPAIGN_1_FOLDER_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="FOLDER" DISPLAYNAME="Folder Path" DataType="STRING"
+				LabelAlign="right" LabelValign="top" LabelVisible="True" Align="left"
+				UIType="EDITBOX" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Folder Path"
+				Order="2" ISNAMEDHIERARCHY="FALSE" DisplayTextID="SAS_CAMPAIGN_1_FOLDER_SHARED" />
+			<Field Name="SAS_CAMPAIGN_1_PUBLISH_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="PUBLISH" DISPLAYNAME="Publish Campaign Info" DataType="STRING"
+				LabelAlign="right" LabelValign="top" Align="left" UIType="DROPDOWNLIST"
+				FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Publish Campaign Info"
+				Order="5" ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes"
+				NAMEDHIERARCHYID="132944342742039" LabelCssClass="" ROLabelVisible="True"
+				EditModeLabelVisible="True" ReadOnlyCssClass="" EditableCssClass=""
+				Valign="top" FieldVisible="true" Mode="DATE" DisplayType="Edit"
+				Disable="No" ControlHeight="" ControlWidth="" AutoGenerate="No"
+				EventHandling="False" ColumnCount="" NamedHierarchyName="sasci_QS_YesNo"
+				DefaultNamedHierarchyValue="No" SelectAll="No" ShowDefaultMessage="false"
+				DisplayTextID="SAS_CAMPAIGN_1_PUBLISH_SHARED">
+				<Value>No</Value>
+				<NotExpectedValueList>
+					<Value>
+					</Value>
+				</NotExpectedValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field Name="SAS_CAMPAIGN_1_CAMPAIGN_NAME_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="CAMPAIGN_NAME" DISPLAYNAME="Campaign Name" DataType="STRING"
+				LabelAlign="right" LabelValign="top" LabelVisible="True" Align="left"
+				UIType="EDITBOX" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Campaign Name"
+				Order="3" ISNAMEDHIERARCHY="FALSE" DisplayTextID="SAS_CAMPAIGN_1_CAMPAIGN_NAME_SHARED" />
+			<Field
+				Name="SAS_CAMPAIGN_1_CAMPAIGN_DEFINITION_NAME_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="CAMPAIGN_DEFINITION_NAME" DISPLAYNAME="Campaign Definition"
+				DataType="STRING" LabelAlign="right" LabelValign="top" Align="left"
+				UIType="DROPDOWNLIST" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Campaign Definition"
+				Order="6" ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes"
+				SHOWSELECTEDVALUEPATH="true" NAMEDHIERARCHYID="199007943481684"
+				LabelCssClass="" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="" EditableCssClass="" Valign="top" FieldVisible="true"
+				Mode="DATE" DisplayType="Edit" Disable="No" ControlHeight=""
+				ControlWidth="" AutoGenerate="No" EventHandling="False" ColumnCount=""
+				NamedHierarchyName="sasci_QS_CampaignDefinitions"
+				DefaultNamedHierarchyValue="QS Direct Mail Campaign Definition"
+				SelectAll="No" ShowDefaultMessage="false"
+				DisplayTextID="SAS_CAMPAIGN_1_CAMPAIGN_DEFINITION_NAME_SHARED">
+				<Value>QS Direct Mail Campaign Definition</Value>
+				<NotExpectedValueList>
+					<Value>
+					</Value>
+				</NotExpectedValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field
+				Name="SAS_CAMPAIGN_1_CAMPAIGN_DESCRIPTION_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="CAMPAIGN_DESCRIPTION" DISPLAYNAME="Campaign Description"
+				DataType="STRING" LabelAlign="right" LabelValign="top" LabelVisible="True"
+				Align="left" UIType="TEXTAREA" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CAMPAIGN_1" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Campaign Description" Order="7"
+				ISNAMEDHIERARCHY="FALSE" DisplayTextID="SAS_CAMPAIGN_1_CAMPAIGN_DESCRIPTION_SHARED" />
+		</Column>
+		<Column Order="2">
+			<Field Name="SAS_CAMPAIGN_1_VIEW_GROUP_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="VIEW_GROUP" DISPLAYNAME="Add View Permission Group"
+				DataType="STRING" LabelAlign="right" LabelValign="top" Align="left"
+				UIType="DROPDOWNLIST" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No"
+				Label="Add View Permission Group" Order="6" ISNAMEDHIERARCHY="TRUE"
+				UseNamedHierarchy="Yes" NAMEDHIERARCHYID="55954792352994"
+				ColumnCount="2" LabelCssClass="" ROLabelVisible="True"
+				EditModeLabelVisible="True" ReadOnlyCssClass="" EditableCssClass=""
+				Valign="top" FieldVisible="true" Mode="DATE" DisplayType="Edit"
+				Disable="No" ControlHeight="" ControlWidth="" AutoGenerate="No"
+				EventHandling="False" NamedHierarchyName="sasci_QS_PermGroupsView_MAMOM"
+				DefaultNamedHierarchyValue="" SelectAll="No" ShowDefaultMessage="false"
+				DisplayTextID="SAS_CAMPAIGN_1_VIEW_GROUP_SHARED">
+				<NotExpectedValueList>
+					<Value>
+					</Value>
+				</NotExpectedValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field Name="SAS_CAMPAIGN_1_MIN_NUM_OFFERS_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="MIN_NUM_OFFERS" DISPLAYNAME="Minimum Number of Offers"
+				DataType="INTEGER" LabelAlign="right" LabelValign="top"
+				LabelVisible="True" Align="left" UIType="EDITBOX" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CAMPAIGN_1" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Minimum Number of Offers"
+				FormattingRequired="YES" Order="3" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_CAMPAIGN_1_MIN_NUM_OFFERS_SHARED" />
+			<Field Name="SAS_CAMPAIGN_1_MAX_NUM_OFFERS_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="MAX_NUM_OFFERS" DISPLAYNAME="Maximum Number of Offers"
+				DataType="INTEGER" LabelAlign="right" LabelValign="top"
+				LabelVisible="True" Align="left" UIType="EDITBOX" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CAMPAIGN_1" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="Maximum Number of Offers"
+				FormattingRequired="YES" Order="4" ISNAMEDHIERARCHY="FALSE"
+				DisplayTextID="SAS_CAMPAIGN_1_MAX_NUM_OFFERS_SHARED" />
+			<Field Name="SAS_CAMPAIGN_1_EDIT_GROUP_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="EDIT_GROUP"
+				DISPLAYNAME="Add Edit Permission Group (PS: used for default Marketing Integration Group)"
+				DataType="STRING" LabelAlign="right" LabelValign="top" Align="left"
+				UIType="DROPDOWNLIST" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No"
+				Label="Add Edit Permission Group (PS: used for default Marketing Integration Group)"
+				Order="5" ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes"
+				NAMEDHIERARCHYID="104726755841346" ColumnCount="2" LabelCssClass=""
+				ROLabelVisible="True" EditModeLabelVisible="True" ReadOnlyCssClass=""
+				EditableCssClass="" Valign="top" FieldVisible="true" Mode="DATE"
+				DisplayType="Edit" Disable="Yes" ControlHeight="" ControlWidth=""
+				AutoGenerate="No" NamedHierarchyName="sasci_QS_PermGroupsEdit_MAMOM"
+				DefaultNamedHierarchyValue="Marketing Integration" SelectAll="No"
+				EventHandling="False" ShowDefaultMessage="false"
+				DisplayTextID="SAS_CAMPAIGN_1_EDIT_GROUP_SHARED">
+				<Value>Marketing Integration</Value>
+				<NotExpectedValueList>
+					<Value>
+					</Value>
+				</NotExpectedValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field Name="SAS_CAMPAIGN_1_MIN_BUDGET_CENT_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="MIN_BUDGET_CENT" DISPLAYNAME="Minimum Budget Amount"
+				DataType="FLOAT" LabelAlign="right" LabelValign="top" Align="left"
+				UIType="EDITBOX" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Minimum Budget Amount"
+				FormattingRequired="Yes" Order="1" ISNAMEDHIERARCHY="FALSE"
+				LabelCssClass="" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="" EditableCssClass="" Valign="top" FieldVisible="true"
+				Mode="DATE" DisplayType="Edit" Disable="No" ControlHeight=""
+				ControlWidth="30" AutoGenerate="No" DigitsAfterDecimal="2"
+				DisplayTextID="SAS_CAMPAIGN_1_MIN_BUDGET_CENT_SHARED">
+				<Validators>
+					<Validator MinValue="1" Type="Range" />
+				</Validators>
+			</Field>
+			<Field Name="SAS_CAMPAIGN_1_MAX_BUDGET_CENT_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="MAX_BUDGET_CENT" DISPLAYNAME="Maximum Budget Amount"
+				DataType="FLOAT" LabelAlign="right" LabelValign="top" Align="left"
+				UIType="EDITBOX" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Maximum Budget Amount"
+				FormattingRequired="Yes" Order="2" ISNAMEDHIERARCHY="FALSE"
+				LabelCssClass="" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="" EditableCssClass="" Valign="top" FieldVisible="true"
+				Mode="DATE" DisplayType="Edit" Disable="No" ControlHeight=""
+				ControlWidth="30" AutoGenerate="No" DigitsAfterDecimal="2"
+				DisplayTextID="SAS_CAMPAIGN_1_MAX_BUDGET_CENT_SHARED">
+				<Validators>
+					<Validator MinValue="1" Type="Range" />
+				</Validators>
+			</Field>
+		</Column>
+	</Section>
+	<Section Heading="Submit to Create Campaign and Initiate Counts"
+		Order="11" ColumnLayout="2" SectionVisibleMode="Both"
+		DisplaySectionHeadingOnDetailPage="True"
+		DisplaySectionHeadingOnEditPage="True" DisplaySectionBorder="True"
+		SectionImageAlignment="Disable" cssHeadingTitle="MainTitleText"
+		cssHeadingBackground="MainTitleBar" cssBorderColor="SquareBlankSectionBorderColor"
+		cssSectionContentBK="SectionBK"
+		DisplayTextID="Submit_to_Create_Campaign_and_Initiate_Counts_SHARED">
+		<Column Order="1">
+			<Field Name="SAS_CAMPAIGN_1_STATUS_TEXT_WORKFLOWPROCESS_SASCAMPAIGN1"
+				Order="2" FIELDCONTENTTYPE="DataField" Label="Submit Status"
+				DISPLAYNAME="Submit Status" UIType="DROPDOWNLIST" LabelCssClass="LabelText"
+				LabelAlign="right" LabelValign="top" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				IsMandatory="No" DataType="STRING" FIELDTYPE="STRING" OBJECTTYPE="FACET"
+				FIELDNAME="STATUS_TEXT" FIELDSIZE="255" ISPRIMARYKEY="FALSE"
+				ISNAMEDHIERARCHY="TRUE" NAMEDHIERARCHYID="89086903346313"
+				FIELDUITYPE="DROPDOWNLIST" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				RELATIONSHIPTYPE="COMPOSITION" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				ROLabelVisible="True" EditModeLabelVisible="True" FieldVisible="true"
+				Mode="DATE" DisplayType="READONLY" Disable="Yes" ControlHeight=""
+				ControlWidth="30" AutoGenerate="No" EventHandling="False"
+				ColumnCount="" NamedHierarchyName="sasci_QS_SubmitStatusText"
+				DefaultNamedHierarchyValue="Operation not yet submitted."
+				UseNamedHierarchy="Yes" SelectAll="No" ShowDefaultMessage="false"
+				DisplayTextID="SAS_CAMPAIGN_1_STATUS_TEXT_SHARED">
+				<Value>Operation not yet submitted.</Value>
+				<NotExpectedValueList>
+					<Value>
+					</Value>
+				</NotExpectedValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field
+				Name="SAS_CAMPAIGN_1_CAMPAIGN_CODE_RETURN_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="CAMPAIGN_CODE_RETURN" DISPLAYNAME="Return Campaign Code"
+				DataType="STRING" LabelAlign="right" LabelValign="top" Align="left"
+				UIType="EDITBOX" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="Yes" Label="Return Campaign Code"
+				Order="3" ISNAMEDHIERARCHY="FALSE" HTMLDecoding="FALSE"
+				LabelCssClass="" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="" EditableCssClass="" Valign="top" FieldVisible="true"
+				Mode="DATE" DisplayType="Edit" Disable="Yes" ControlHeight=""
+				ControlWidth="30" AutoGenerate="No"
+				DisplayTextID="SAS_CAMPAIGN_1_CAMPAIGN_CODE_RETURN_SHARED" />
+			<Field Name="SAS_CAMPAIGN_1_STATUS_WORKFLOWPROCESS_SASCAMPAIGN1"
+				Order="1" FIELDCONTENTTYPE="DataField" Label="Submit Status Code"
+				DISPLAYNAME="Submit Status Code" UIType="EDITBOX" LabelCssClass="LabelText"
+				LabelAlign="right" LabelValign="top" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				IsMandatory="No" DataType="INTEGER" FIELDTYPE="INTEGER"
+				FormattingRequired="Yes" OBJECTTYPE="FACET" FIELDNAME="STATUS"
+				FIELDSIZE="8" ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE"
+				FIELDUITYPE="EDITBOX" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				RELATIONSHIPTYPE="COMPOSITION" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				ROLabelVisible="True" EditModeLabelVisible="True" FieldVisible="true"
+				Mode="DATE" DisplayType="READONLY" Disable="Yes" ControlHeight=""
+				ControlWidth="30" AutoGenerate="No" IsConditionAwareField="false"
+				DisplayTextID="SAS_CAMPAIGN_1_STATUS_SHARED" />
+		</Column>
+		<Column Order="2">
+			<Field Order="2" Name="test_button_create_submit" Label="Submit to (test only, hide for prod.)"
+				UIType="EDITBOX" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" FieldVisible="true" Mode="DATE" DisplayType="READONLY"
+				Disable="Yes" ControlHeight="" ControlWidth="30" AutoGenerate="No"
+				IsMandatory="No" DataType="NONE" DisplayTextID="test_button_create_submit_SHARED">
+				<Action Type="WebServiceInvoke" DisplayTextID="test_button_create_submit_ACTION_SHARED"
+					ToolTipID="test_button_create_submit_TOOLTIP_SHARED" UIType="ALButton">
+					<DisplayText>Create Campaign and Iniate Counts Now</DisplayText>
+					<ToolTipText>creates campaign in the campaign management system
+					</ToolTipText>
+					<WebServiceConfigID>241743375708867</WebServiceConfigID>
+				</Action>
+			</Field>
+			<Field Order="1" Name="blank_sub_12" Label="blank_sub_12"
+				UIType="EDITBOX" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" FieldVisible="false" Mode="DATE" DisplayType="READONLY"
+				Disable="Yes" ControlHeight="" ControlWidth="30" AutoGenerate="No"
+				IsMandatory="No" DataType="NONE" DisplayTextID="blank_sub_12_SHARED" />
+			<Field Order="3" Name="Create_Camp_Count" Label="Submit to"
+				UIType="EDITBOX" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" FieldVisible="true" Mode="DATE" DisplayType="READONLY"
+				Disable="Yes" ControlHeight="" ControlWidth="30" AutoGenerate="No"
+				IsMandatory="No" DataType="NONE" IsConditionalDisplay="No"
+				DisplayTextID="Create_Camp_Count_SHARED">
+				<Action Type="WebServiceInvoke" DisplayTextID="Create_Camp_Count_ACTION_SHARED"
+					ToolTipID="Create_Camp_Count_TOOLTIP_SHARED" UIType="ALButton">
+					<DisplayText>Create Campaign and Initiate Counts</DisplayText>
+					<ToolTipText>creates Campaign in the Campaign Management system and
+						initiates counts</ToolTipText>
+					<WebServiceConfigID>65977376987604</WebServiceConfigID>
+				</Action>
+			</Field>
+		</Column>
+	</Section>
+	<Section Heading="Campaign Marketing Population" Order="7"
+		ColumnLayout="1" SectionVisibleMode="Both"
+		DisplaySectionHeadingOnDetailPage="True"
+		DisplaySectionHeadingOnEditPage="True" DisplaySectionBorder="True"
+		SectionImageAlignment="Disable" cssHeadingTitle="MainTitleText"
+		cssHeadingBackground="MainTitleBar" cssBorderColor="SquareBlankSectionBorderColor"
+		cssSectionContentBK="SectionBK" DisplayTextID="Campaign_Marketing_Population_SHARED">
+		<Column Order="1">
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_INCLUSION_LISTS_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				Order="1" FIELDCONTENTTYPE="DataField" Label="Inclusion Lists"
+				DISPLAYNAME="Inclusion Lists" UIType="MULTISELECT" LabelCssClass="LabelText"
+				LabelAlign="right" LabelValign="top" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				IsMandatory="No" DataType="STRING" FIELDTYPE="STRING" OBJECTTYPE="FACET"
+				FIELDNAME="INCLUSION_LISTS" FIELDSIZE="255" ISPRIMARYKEY="FALSE"
+				ISNAMEDHIERARCHY="TRUE" NAMEDHIERARCHYID="116045501095678"
+				UseNamedHierarchy="Yes" SHOWSELECTEDVALUEPATH="TRUE" FIELDUITYPE="TREEVIEW"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD" ROLabelVisible="True"
+				EditModeLabelVisible="True" FieldVisible="true" Mode="DATE"
+				DisplayType="Edit" Disable="No" ControlHeight="" ControlWidth=""
+				AutoGenerate="No" ColumnCount="" NamedHierarchyName="sasci_QS_InclusionLists"
+				DefaultNamedHierarchyValue="" SelectAll="No" WEBSERVICECONFIGID="185556766776551"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_INCLUSION_LISTS_SHARED">
+				<Help />
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_EXCLUSION_LISTS_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				Order="2" FIELDCONTENTTYPE="DataField" Label="Exclusion Lists"
+				DISPLAYNAME="Exclusion Lists" UIType="MULTISELECT" LabelCssClass="LabelText"
+				LabelAlign="right" LabelValign="top" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				IsMandatory="No" DataType="STRING" FIELDTYPE="STRING" OBJECTTYPE="FACET"
+				FIELDNAME="EXCLUSION_LISTS" FIELDSIZE="255" ISPRIMARYKEY="FALSE"
+				ISNAMEDHIERARCHY="TRUE" NAMEDHIERARCHYID="4622191322916"
+				UseNamedHierarchy="Yes" SHOWSELECTEDVALUEPATH="TRUE" FIELDUITYPE="TREEVIEW"
+				OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD" RELATIONSHIPTYPE="COMPOSITION"
+				RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				WEBSERVICECONFIGID="240027644579968" ROLabelVisible="True"
+				EditModeLabelVisible="True" FieldVisible="true" Mode="DATE"
+				DisplayType="Edit" Disable="No" ControlHeight="" ControlWidth=""
+				AutoGenerate="No" ColumnCount="" NamedHierarchyName="sasci_QS_ExclusionLists"
+				DefaultNamedHierarchyValue="" SelectAll="No"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_EXCLUSION_LISTS_SHARED">
+				<Help />
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+		</Column>
+	</Section>
+	<Section Heading="Campaign Scheduling" Order="6" ColumnLayout="1"
+		SectionVisibleMode="Both" DisplaySectionHeadingOnDetailPage="True"
+		DisplaySectionHeadingOnEditPage="True" DisplaySectionBorder="True"
+		SectionImageAlignment="Disable" cssHeadingTitle="MainTitleText"
+		cssHeadingBackground="MainTitleBar" cssBorderColor="SquareBlankSectionBorderColor"
+		cssSectionContentBK="SectionBK" DisplayTextID="Campaign_Scheduling_SHARED">
+		<Column Order="1">
+			<Field
+				Name="SAS_CAMPAIGN_1_RECUR_ON_DAY_OF_MONTH_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="RECUR_ON_DAY_OF_MONTH" DISPLAYNAME="Recurrence Day of Month"
+				DataType="STRING" LabelAlign="right" LabelValign="top" Align="left"
+				UIType="DROPDOWNLIST" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No"
+				Label="Recurrence Day of Month (hidden currently)" Order="10"
+				ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes" NAMEDHIERARCHYID="52284976574204"
+				LabelCssClass="" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="" EditableCssClass="" Valign="top" FieldVisible="false"
+				Mode="DATE" DisplayType="Edit" Disable="No" ControlHeight=""
+				ControlWidth="" AutoGenerate="No" EventHandling="False" ColumnCount=""
+				NamedHierarchyName="sasci_QS_DayOfMonth" DefaultNamedHierarchyValue=""
+				SelectAll="No" ShowDefaultMessage="false"
+				DisplayTextID="SAS_CAMPAIGN_1_RECUR_ON_DAY_OF_MONTH_SHARED">
+				<Help />
+				<NotExpectedValueList>
+					<Value>
+					</Value>
+				</NotExpectedValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field Name="SAS_CAMPAIGN_1_END_AFTER_UNITS_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="END_AFTER_UNITS" DISPLAYNAME="End After Type" DataType="STRING"
+				LabelAlign="right" LabelValign="top" Align="left" UIType="DROPDOWNLIST"
+				FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No"
+				Label="End After Type (hidden currently)" Order="11"
+				ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes" NAMEDHIERARCHYID="42140192277398"
+				LabelCssClass="" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="" EditableCssClass="" Valign="top" FieldVisible="true"
+				Mode="DATE" DisplayType="Edit" Disable="No" ControlHeight=""
+				ControlWidth="" AutoGenerate="No" EventHandling="False" ColumnCount=""
+				NamedHierarchyName="sasci_QS_EndAfterType"
+				DefaultNamedHierarchyValue="" SelectAll="No" ShowDefaultMessage="false"
+				DisplayTextID="SAS_CAMPAIGN_1_END_AFTER_UNITS_SHARED">
+				<NotExpectedValueList>
+					<Value>
+					</Value>
+				</NotExpectedValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field Name="SAS_CAMPAIGN_1_START_DATE_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="START_DATE" DISPLAYNAME="Start Date" DataType="DATETIME"
+				LabelAlign="right" LabelValign="top" Align="left" UIType="CALENDAR"
+				FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Start Date"
+				FormattingRequired="YES" Order="4" ISNAMEDHIERARCHY="FALSE"
+				LabelCssClass="" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="" EditableCssClass="" Valign="top" FieldVisible="true"
+				Mode="DATE" DisplayType="Edit" Disable="No" ControlHeight=""
+				ControlWidth="" AutoGenerate="No" ClearButton="No"
+				DisplayTextID="SAS_CAMPAIGN_1_START_DATE_SHARED">
+				<Instruction
+					DisplayTextID="SAS_CAMPAIGN_1_START_DATE_WORKFLOWPROCESS_SASCAMPAIGN1_INSTRUCTIONS_SHARED">this is the date it will run initially run and build
+					the export contents in the Campaign System</Instruction>
+			</Field>
+			<Field Name="SAS_CAMPAIGN_1_RECURRENCE_TYPE_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="RECURRENCE_TYPE" DISPLAYNAME="Recurrence Type" DataType="STRING"
+				LabelAlign="right" LabelValign="top" Align="left" UIType="DROPDOWNLIST"
+				FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Type of occurrence"
+				Order="5" ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes"
+				NAMEDHIERARCHYID="269501207585770" LabelCssClass="" ROLabelVisible="True"
+				EditModeLabelVisible="True" ReadOnlyCssClass="" EditableCssClass=""
+				Valign="top" FieldVisible="true" Mode="DATE" DisplayType="Edit"
+				Disable="No" ControlHeight="" ControlWidth="" AutoGenerate="No"
+				EventHandling="False" ColumnCount="" NamedHierarchyName="sasci_QS_RecurrenceType"
+				DefaultNamedHierarchyValue="None" SelectAll="No" ShowDefaultMessage="false"
+				DisplayTextID="SAS_CAMPAIGN_1_RECURRENCE_TYPE_SHARED">
+				<Help />
+				<Value>None</Value>
+				<NotExpectedValueList>
+					<Value>
+					</Value>
+				</NotExpectedValueList>
+				<Instruction
+					DisplayTextID="SAS_CAMPAIGN_1_RECURRENCE_TYPE_WORKFLOWPROCESS_SASCAMPAIGN1_INSTRUCTIONS_SHARED">select "none" if only one occurrence</Instruction>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field
+				Name="SAS_CAMPAIGN_1_RECUR_ON_DAY_OF_WEEK_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="RECUR_ON_DAY_OF_WEEK" DISPLAYNAME="Recurrence Day of Week"
+				DataType="STRING" LabelAlign="right" LabelValign="top" Align="left"
+				UIType="DROPDOWNLIST" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No"
+				Label="Recurrence Day of Week (hidden currently)" Order="9"
+				ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes" NAMEDHIERARCHYID="148404339848694"
+				LabelCssClass="" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="" EditableCssClass="" Valign="top" FieldVisible="false"
+				Mode="DATE" DisplayType="Edit" Disable="No" ControlHeight=""
+				ControlWidth="" AutoGenerate="No" EventHandling="False" ColumnCount=""
+				NamedHierarchyName="sasci_QS_DaysOfWeek" DefaultNamedHierarchyValue=""
+				SelectAll="No" ShowDefaultMessage="false"
+				DisplayTextID="SAS_CAMPAIGN_1_RECUR_ON_DAY_OF_WEEK_SHARED">
+				<NotExpectedValueList>
+					<Value>
+					</Value>
+				</NotExpectedValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field Name="SAS_CAMPAIGN_1_RECURRENCE_EVERY_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="RECURRENCE_EVERY" DISPLAYNAME="Recurrence Interval"
+				DataType="STRING" LabelAlign="right" LabelValign="top" Align="left"
+				UIType="DROPDOWNLIST" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No"
+				Label="Recurrence Interval (hidden currently)" Order="6"
+				ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes" NAMEDHIERARCHYID="220762224124990"
+				LabelCssClass="" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="" EditableCssClass="" Valign="top" FieldVisible="false"
+				Mode="DATE" DisplayType="Edit" Disable="No" ControlHeight=""
+				ControlWidth="" AutoGenerate="No" EventHandling="False" ColumnCount=""
+				NamedHierarchyName="sasci_QS_RecurrenceEvery"
+				DefaultNamedHierarchyValue="" SelectAll="No" ShowDefaultMessage="false"
+				DisplayTextID="SAS_CAMPAIGN_1_RECURRENCE_EVERY_SHARED">
+				<Help />
+				<NotExpectedValueList>
+					<Value>
+					</Value>
+				</NotExpectedValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field
+				Name="SAS_CAMPAIGN_1_RECUR_INDEFINITELY_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="RECUR_INDEFINITELY" DISPLAYNAME="Recur Indefinitely"
+				DataType="STRING" LabelAlign="right" LabelValign="top" Align="left"
+				UIType="CHECKBOX" FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No"
+				Label="Recur Indefinitely (hidden currently)" Order="12"
+				ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes" NAMEDHIERARCHYID="132944342742039"
+				ColumnCount="2" LabelCssClass="" ROLabelVisible="True"
+				EditModeLabelVisible="True" ReadOnlyCssClass="" EditableCssClass=""
+				Valign="top" FieldVisible="false" Mode="DATE" DisplayType="Edit"
+				Disable="No" ControlHeight="" ControlWidth="" AutoGenerate="No"
+				NamedHierarchyName="sasci_QS_YesNo" DefaultNamedHierarchyValue=""
+				SelectAll="No" DisplayTextID="SAS_CAMPAIGN_1_RECUR_INDEFINITELY_SHARED">
+				<Help />
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field Name="SAS_CAMPAIGN_1_END_AFTER_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="END_AFTER" DISPLAYNAME="End After x No. of Recurrences"
+				DataType="STRING" LabelAlign="right" LabelValign="top" LabelVisible="True"
+				Align="left" UIType="DROPDOWNLIST" FIELDCONTENTTYPE="DataField"
+				OBJECTTYPENAME="SAS_CAMPAIGN_1" OBJECTTYPE="FACET"
+				RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1" RELATIONSHIPTYPE="COMPOSITION"
+				IsMandatory="No" Label="End After x No. of Recurrences" Order="7"
+				ISNAMEDHIERARCHY="TRUE" UseNamedHierarchy="Yes"
+				SHOWSELECTEDVALUEPATH="true" NAMEDHIERARCHYID="95580192513927"
+				DisplayTextID="SAS_CAMPAIGN_1_END_AFTER_SHARED" />
+			<Field
+				Name="SAS_CUSTOM_DETAILS_STD_INSTRUCTIONS_WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				FIELDNAME="INSTRUCTIONS" DISPLAYNAME="Instructions" DataType="STRING"
+				LabelAlign="right" LabelValign="top" Align="left" UIType="TEXTAREA"
+				FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CUSTOM_DETAILS_STD"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOW_SAS_CUSTOM_DETAILS_STD"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No" Label="Detailed Instructions"
+				Order="2" ISNAMEDHIERARCHY="FALSE" HTMLDecoding="FALSE"
+				LabelCssClass="" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="" EditableCssClass="" Valign="top" FieldVisible="true"
+				Mode="DATE" DisplayType="Edit" Disable="No" ControlHeight="8"
+				ControlWidth="66" AutoGenerate="No"
+				DisplayTextID="SAS_CUSTOM_DETAILS_STD_INSTRUCTIONS_SHARED">
+				<Instruction
+					DisplayTextID="SAS_CUSTOM_DETAILS_STD_INSTRUCTIONS_WORKFLOW_SAS_CUSTOM_DETAILS_STD_INSTRUCTIONS_SHARED">Provide detailed instructions here for scheduling.
+					Include start date, intervals, frequency etc.</Instruction>
+			</Field>
+			<Field Name="SAS_CAMPAIGN_1_END_BY_DATE_WORKFLOWPROCESS_SASCAMPAIGN1"
+				FIELDNAME="END_BY_DATE" DISPLAYNAME="End By Date" DataType="DATETIME"
+				LabelAlign="right" LabelValign="top" Align="left" UIType="CALENDAR"
+				FIELDCONTENTTYPE="DataField" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				OBJECTTYPE="FACET" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				RELATIONSHIPTYPE="COMPOSITION" IsMandatory="No"
+				Label="End By Date (hidden currently)" FormattingRequired="YES"
+				Order="8" ISNAMEDHIERARCHY="FALSE" LabelCssClass="" ROLabelVisible="True"
+				EditModeLabelVisible="True" ReadOnlyCssClass="" EditableCssClass=""
+				Valign="top" FieldVisible="false" Mode="DATE" DisplayType="Edit"
+				Disable="No" ControlHeight="" ControlWidth="" AutoGenerate="No"
+				ClearButton="No" DisplayTextID="SAS_CAMPAIGN_1_END_BY_DATE_SHARED" />
+			<Field Order="1" Name="Campaign_Scheduling_instructions"
+				Label="Provide instructions or directly set Campaign System dates"
+				UIType="EDITBOX" LabelCssClass="Text" LabelAlign="center"
+				LabelValign="top" ROLabelVisible="True" EditModeLabelVisible="True"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" FieldVisible="true" Mode="DATE" DisplayType="READONLY"
+				Disable="Yes" ControlHeight="" ControlWidth="5" AutoGenerate="No"
+				IsMandatory="No" DataType="NONE" DisplayTextID="Campaign_Scheduling_instructions_SHARED" />
+			<Field Order="3" Name="setting_MA_scheduling_system_run_dates"
+				Label="Campaign System Settings" UIType="EDITBOX" LabelCssClass="LabelText"
+				LabelAlign="right" LabelValign="top" ROLabelVisible="True"
+				EditModeLabelVisible="True" ReadOnlyCssClass="Text"
+				EditableCssClass="FormInputArea" Align="left" Valign="top"
+				FieldVisible="true" Mode="DATE" DisplayType="READONLY" Disable="Yes"
+				ControlHeight="" ControlWidth="66" AutoGenerate="No" IsMandatory="No"
+				DataType="NONE" DisplayTextID="setting_MA_scheduling_system_run_dates_SHARED">
+				<Instruction
+					DisplayTextID="setting_MA_scheduling_system_run_dates_INSTRUCTIONS_SHARED">complete scheduling fields below to directly set
+					campaign system run dates</Instruction>
+			</Field>
+		</Column>
+	</Section>
+	<Section
+		Heading="Initiate Counts to Run (PSD: hidden section, default set to initiate counts)"
+		Order="12" ColumnLayout="1" SectionVisibleMode="Both"
+		DisplaySectionHeadingOnDetailPage="False"
+		DisplaySectionHeadingOnEditPage="False" DisplaySectionBorder="False"
+		SectionImageAlignment="Disable" cssHeadingTitle="MainTitleText"
+		cssHeadingBackground="MainTitleBar" cssBorderColor="SquareBlankSectionBorderColor"
+		cssSectionContentBK="SectionBK"
+		DisplayTextID="Initiate_Counts_to_Run_(PSD:_hidden_section,_default_set_to_initiate_counts)_SHARED">
+		<Column Order="1">
+			<Field Name="SAS_CAMPAIGN_1_COUNT_INITIATION_WORKFLOWPROCESS_SASCAMPAIGN1"
+				Order="1" FIELDCONTENTTYPE="DataField"
+				Label="Initiate to Run Counts    -  visible for our test only right now -  (PSD: Hidden, default set to initiate counts)"
+				DISPLAYNAME="Initiate to Run Counts    -  visible for our test only right now -  (PSD: Hidden, default set to initiate counts)"
+				UIType="RADIOBUTTON" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" ReadOnlyCssClass="Text" EditableCssClass="FormInputArea"
+				Align="left" Valign="top" IsMandatory="No" DataType="BOOLEAN"
+				FIELDTYPE="BOOLEAN" OBJECTTYPE="FACET" FIELDNAME="COUNT_INITIATION"
+				FIELDSIZE="1" ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE"
+				FIELDUITYPE="RADIOBUTTON" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				RELATIONSHIPTYPE="COMPOSITION" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				ROLabelVisible="True" EditModeLabelVisible="True" FieldVisible="false"
+				Mode="DATE" DisplayType="Edit" Disable="No" ControlHeight=""
+				ControlWidth="" AutoGenerate="No" UseNamedHierarchy="No"
+				ColumnCount="4" DisplayTextID="SAS_CAMPAIGN_1_COUNT_INITIATION_SHARED">
+				<Item Selected="Yes">
+					<DisplayValue>Yes</DisplayValue>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<DisplayValue>No</DisplayValue>
+					<Value>0</Value>
+				</Item>
+				<ValueList>
+					<Value>1</Value>
+				</ValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field
+				Name="SAS_CAMPAIGN_1_COUNT_ASYNCHRONOUS_RUN_TYPE_WORKFLOWPROCESS_SASCAMPAIGN1"
+				Order="2" FIELDCONTENTTYPE="DataField"
+				Label="Counts initiated but not waiting for response (PSD: Hidden for potential future use, set to yes run asynch by default)"
+				DISPLAYNAME="Counts initiated but not waiting for response (PSD: Hidden for potential future use, set to yes run asynch by default)"
+				UIType="RADIOBUTTON" LabelCssClass="LabelText" LabelAlign="right"
+				LabelValign="top" ReadOnlyCssClass="Text" EditableCssClass="FormInputArea"
+				Align="left" Valign="top" IsMandatory="No" DataType="BOOLEAN"
+				FIELDTYPE="BOOLEAN" OBJECTTYPE="FACET" FIELDNAME="COUNT_ASYNCHRONOUS_RUN_TYPE"
+				FIELDSIZE="1" ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE"
+				FIELDUITYPE="RADIOBUTTON" OBJECTTYPENAME="SAS_CAMPAIGN_1"
+				RELATIONSHIPTYPE="COMPOSITION" RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1"
+				ROLabelVisible="True" EditModeLabelVisible="True" FieldVisible="false"
+				Mode="DATE" DisplayType="Edit" Disable="No" ControlHeight=""
+				ControlWidth="" AutoGenerate="No" UseNamedHierarchy="No"
+				ColumnCount="4" DisplayTextID="SAS_CAMPAIGN_1_COUNT_ASYNCHRONOUS_RUN_TYPE_SHARED">
+				<Help />
+				<Item Selected="Yes">
+					<DisplayValue>Yes</DisplayValue>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<DisplayValue>No</DisplayValue>
+					<Value>0</Value>
+				</Item>
+				<ValueList>
+					<Value>1</Value>
+				</ValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field
+				Name="SAS_CAMPAIGN_1_RUN_ALL_LINK_NODES_ON_EXEC_WORKFLOWPROCESS_SASCAMPAIGN1"
+				Order="3" FIELDCONTENTTYPE="DataField" Label="Run All Link Nodes On Exec"
+				DISPLAYNAME="Run All Link Nodes On Exec" UIType="RADIOBUTTON"
+				LabelCssClass="LabelText" LabelAlign="right" LabelValign="top"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" IsMandatory="No" DataType="BOOLEAN" FIELDTYPE="BOOLEAN"
+				OBJECTTYPE="FACET" FIELDNAME="RUN_ALL_LINK_NODES_ON_EXEC" FIELDSIZE="1"
+				ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="RADIOBUTTON"
+				OBJECTTYPENAME="SAS_CAMPAIGN_1" RELATIONSHIPTYPE="COMPOSITION"
+				RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1" ROLabelVisible="True"
+				EditModeLabelVisible="True" FieldVisible="false" Mode="DATE"
+				DisplayType="Edit" Disable="No" ControlHeight="" ControlWidth=""
+				AutoGenerate="No" UseNamedHierarchy="No" ColumnCount="4"
+				DisplayTextID="SAS_CAMPAIGN_1_RUN_ALL_LINK_NODES_ON_EXEC_SHARED">
+				<Item>
+					<DisplayValue>True</DisplayValue>
+					<Value>1</Value>
+				</Item>
+				<Item Selected="Yes">
+					<DisplayValue>False</DisplayValue>
+					<Value>0</Value>
+				</Item>
+				<ValueList>
+					<Value>0</Value>
+				</ValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field
+				Name="SAS_CAMPAIGN_1_RUN_ALL_NODES_ON_EXEC_WORKFLOWPROCESS_SASCAMPAIGN1"
+				Order="4" FIELDCONTENTTYPE="DataField" Label="Run All Nodes On Exec"
+				DISPLAYNAME="Run All Nodes On Exec" UIType="RADIOBUTTON"
+				LabelCssClass="LabelText" LabelAlign="right" LabelValign="top"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" IsMandatory="No" DataType="BOOLEAN" FIELDTYPE="BOOLEAN"
+				OBJECTTYPE="FACET" FIELDNAME="RUN_ALL_NODES_ON_EXEC" FIELDSIZE="1"
+				ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="RADIOBUTTON"
+				OBJECTTYPENAME="SAS_CAMPAIGN_1" RELATIONSHIPTYPE="COMPOSITION"
+				RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1" ROLabelVisible="True"
+				EditModeLabelVisible="True" FieldVisible="false" Mode="DATE"
+				DisplayType="Edit" Disable="No" ControlHeight="" ControlWidth=""
+				AutoGenerate="No" UseNamedHierarchy="No" ColumnCount="4"
+				DisplayTextID="SAS_CAMPAIGN_1_RUN_ALL_NODES_ON_EXEC_SHARED">
+				<Help />
+				<Item Selected="Yes">
+					<DisplayValue>True</DisplayValue>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<DisplayValue>False</DisplayValue>
+					<Value>0</Value>
+				</Item>
+				<ValueList>
+					<Value>1</Value>
+				</ValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+			<Field
+				Name="SAS_CAMPAIGN_1_RUN_ALL_NODES_ON_COMM_EXEC_WORKFLOWPROCESS_SASCAMPAIGN1"
+				Order="5" FIELDCONTENTTYPE="DataField" Label="Run All Nodes On Comm Exec"
+				DISPLAYNAME="Run All Nodes On Comm Exec" UIType="RADIOBUTTON"
+				LabelCssClass="LabelText" LabelAlign="right" LabelValign="top"
+				ReadOnlyCssClass="Text" EditableCssClass="FormInputArea" Align="left"
+				Valign="top" IsMandatory="No" DataType="BOOLEAN" FIELDTYPE="BOOLEAN"
+				OBJECTTYPE="FACET" FIELDNAME="RUN_ALL_NODES_ON_COMM_EXEC" FIELDSIZE="1"
+				ISPRIMARYKEY="FALSE" ISNAMEDHIERARCHY="FALSE" FIELDUITYPE="RADIOBUTTON"
+				OBJECTTYPENAME="SAS_CAMPAIGN_1" RELATIONSHIPTYPE="COMPOSITION"
+				RELATIONSHIPNAME="WORKFLOWPROCESS_SASCAMPAIGN1" ROLabelVisible="True"
+				EditModeLabelVisible="True" FieldVisible="false" Mode="DATE"
+				DisplayType="Edit" Disable="No" ControlHeight="" ControlWidth=""
+				AutoGenerate="No" UseNamedHierarchy="No" ColumnCount="4"
+				DisplayTextID="SAS_CAMPAIGN_1_RUN_ALL_NODES_ON_COMM_EXEC_SHARED">
+				<Help />
+				<Item>
+					<DisplayValue>True</DisplayValue>
+					<Value>1</Value>
+				</Item>
+				<Item Selected="Yes">
+					<DisplayValue>False</DisplayValue>
+					<Value>0</Value>
+				</Item>
+				<ValueList>
+					<Value>0</Value>
+				</ValueList>
+				<RemoveFromNH>
+					<Values>
+					</Values>
+				</RemoveFromNH>
+			</Field>
+		</Column>
+	</Section>
+</Form>
